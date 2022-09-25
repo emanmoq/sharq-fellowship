@@ -156,7 +156,26 @@ jQuery(function ($) {
     items: 2
 
   });
-  
+
+    $('.success.chart').easyPieChart({
+      size: 68,
+      barColor: "#31D894",
+      scaleLength: 0,
+      lineWidth: 3,
+      trackColor: "#E9E9E9",
+      lineCap: "circle",
+      animate: 2000,
+    });
+    $('.InProgress.chart').easyPieChart({
+      size: 68,
+      barColor: "#FFCE21",
+      scaleLength: 0,
+      lineWidth: 3,
+      trackColor: "#E9E9E9",
+      lineCap: "circle",
+      animate: 2000,
+    });
+
   $(window).scroll(function () {
     scrollTop = $(window).scrollTop();
     if (( scrollTop +  $(window).height()) > $(document).height()) {

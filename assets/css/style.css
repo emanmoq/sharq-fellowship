@@ -58,6 +58,10 @@ ul {
     padding: 0;
 }
 
+.navbar-collapse {
+    justify-content: space-around;
+}
+
 header .container-fluid {
     padding-left: 80px;
     padding-right: 80px;
@@ -147,57 +151,6 @@ header .container-fluid {
     border: 0;
 }
 
-.exploreBox {
-    width: 300px;
-    margin-left: 29px;
-    float: left;
-    ;
-    margin-right: 10px;
-
-}
-
-.exploreSelect {
-    float: left;
-}
-
-.exploreForm {
-    border-radius: 100px;
-    outline: 1px solid #E2E2E2;
-    background-color: #FBFBFB;
-    height: 34px;
-    width: 100%;
-    ;
-}
-
-.exploreBtn {
-    background-color: #761C33;
-    width: calc(100% - 261px);
-    height: 100%;
-    float: left;
-    border-radius: 0;
-    ;
-    border-radius: 0 100px 100px 0;
-}
-
-.exploreForm .selectric-wrapper {
-    float: left;
-    width: 76px;
-    background-color: #FBFBFB;
-    ;
-    min-height: 100% !important;
-    ;
-    color: #761C33;
-    font-weight: 600;
-    border: 0;
-    border-right: 1px solid #E2E2E2;
-    ;
-    text-align: center;
-    height: 100%;
-    ;
-    border-radius: 100px 0 0 100px;
-    display: inline-flex;
-    justify-content: center;
-}
 
 .selectric {
     align-self: center;
@@ -211,35 +164,7 @@ header .container-fluid {
     ;
 }
 
-.exploreForm .selectric .button {
-    padding: 0;
-    ;
-    align-self: center;
-    height: 100%;
-    position: relative;
-    width: auto;
-    margin-right: 10px;
-    top: -2px;
-    right: -4px;
-}
 
-.exploreForm .selectric .button i {
-    font-size: 9px;
-    color: #591526;
-    align-self: center;
-
-}
-
-.exploreForm .selectric .label {
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    padding: 0;
-    font-size: 0.625em;
-    color: #591526;
-    align-self: center;
-    justify-content: center;
-}
 
 .selectric-open .selectric {
     background-color: transparent;
@@ -247,17 +172,6 @@ header .container-fluid {
 
 .selectric-open .selectric-items {
     width: 100% !important;
-}
-
-.exploreForm select:focus {
-    border: 0;
-    box-shadow: 0;
-    outline: 0;
-}
-
-.exploreForm .selectric {
-    width: auto;
-    height: auto;
 }
 
 .selectric-items li {
@@ -282,24 +196,6 @@ header .container-fluid {
     padding: 0
 }
 
-.exploreInput {
-    background-color: #FBFBFB;
-    width: 185px;
-    padding-left: 10px;
-    float: left;
-    height: 100%;
-    ;
-    border: 0;
-    box-shadow: 0;
-    ;
-}
-
-.exploreInput::placeholder {
-    font-weight: 500;
-    color: #6E6E6E;
-    ;
-    font-size: 0.6875em;
-}
 
 .dropdown-toggle::after {
     border: 0;
@@ -387,16 +283,20 @@ header .container-fluid {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    padding-top: 111px;
+
 }
 
 .heroSliderItem:before {
     position: absolute;
     content: "";
-    background-image: linear-gradient(to right, rgb(249, 245, 246, .1) 0%, rgba(255, 255, 255, 0) 100%);
+    background-image: linear-gradient(to right, rgba(249, 245, 246, 1) 0%, rgba(255, 255, 255, 0) 70%);
     opacity: .89;
     width: 100%;
     height: 100%;
+}
+
+.heroText {
+    padding-top: 160px;
 }
 
 .heroText h1 {
@@ -446,288 +346,321 @@ header .container-fluid {
     position: relative;
 }
 
-.fixedItems {
-    position: absolute;
-    right: 13%;
-    bottom: 18%;
-    z-index: 11;
-}
-
-.fixedItemsImg {
-    width: 70px;
-    margin: 5px;
-    display: inline-block;
-}
-
-.fixedItemsImg img {
-    transition: all .5s;
-}
-
-.fixedItemsImg:hover img {
-    transition: all .5s;
-    ;
-    transform: scale(1.1);
-}
-
-.benefit {
-    margin-top: -105px;
-    z-index: 22;
-    position: relative;
-}
-
-.BenfitBox,
 .OurMessionBox {
     background-color: white;
     border-radius: 16px;
     padding-top: 35px;
     background-color: #E6D6DA;
     padding-bottom: 39px;
+
 }
 
-.benfitIcon {
-    margin-bottom: 20px;
-    height: 50px;
-    max-height: 50px;
-    display: flex;
+.diplomaProgram {
+    padding-top: 70px;
+    padding-bottom: 120px
 }
 
-.benfitIcon svg {
-    display: flex;
-    align-self: end;
-}
-
-.bnfitContent h3 {
-    font-size: 1.1875em;
-    font-weight: 600;
-    margin-bottom: 14px;
-    ;
-    line-height: 2;
-}
-
-.bnfitContent h4 {
-    font-size: 1em;
-    font-weight: 600;
-    margin-bottom: 14px;
-    ;
-    line-height: 2;
-}
-
-.bnfitContent span {
-    opacity: .5;
-    font-size: .875em;
-}
-
-.newCourses {
-    padding-top: 74px;
-    padding-bottom: 116px;
-}
-
-.sectionTitle h5 {
-    font-size: 1.25em;
-    font-weight: bold;
-    ;
-    margin-bottom: 15px;
-}
-
-.sectionTitle p {
-    font-size: .9em;
-    font-weight: 500;
-    margin: 0;
-}
-
-.sectionTitle {
-    margin-bottom: 45px;
-    ;
-}
-
-#home-pills-tab {
-    margin-bottom: 40px;
-}
-
-#home-pills-tab .nav-link,
-#mobile-pills-tab .nav-link {
-    padding: 12px 18px;
-    border: 1px solid #E1E1E1;
-    color: rgba(0, 0, 0, .5);
-    font-size: .875em;
-    font-weight: 500;
-    margin-right: 10px;
-    border-radius: 21.5px;
-}
-
-#home-pills-tab .nav-link.active,
-#mobile-pills-tab .nav-link.active {
-    border: 1px solid #761C33;
-    color: #761C33;
-    background-color: transparent;
-}
-
-@media (min-width: 1200px) {
-    .container {
-        max-width: 1058px;
-    }
-
-    .benfitTitle {
-        padding: 0 60px
-    }
-}
-
-.courseItemBox {
-    border-radius: 16px;
-    overflow: hidden;
-    background-color: white;
+.diplomaProgramBox {
     border: 1px solid #E9E9E9;
-    padding-bottom: 20px;
+    padding: 35px;
+    height: 159px;
+    border-radius: 16px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 16px;
 }
 
-.courseItemBox:hover {
-    box-shadow: 0 6px 14px rgba(0, 0, 0, .04);
+.diplomIconCont {
+    align-self: center;
 }
 
-.courseDesc {
-    padding: 20px;
-    padding-bottom: 0;
+.diplomaProgram .sectionTitle {
+    margin-bottom: 20px;
 }
 
-.owl-carousel .owl-stage-outer {
-    padding: 20px 0
-}
-
-.heroSlider.owl-carousel .owl-stage-outer {
-    padding: 0
-}
-
-.courseImg {
-    position: relative;
-    height: 166px;
-    overflow: hidden;
-}
-
-.courseLang {
-    position: absolute;
-    width: 34px;
-    height: 34px;
+.diplomIconCont {
+    display: inline-flex;
+    width: 89px;
+    height: 89px;
     border-radius: 50%;
-    background-color: #761C33;
-    color: white;
-    display: block;
-    font-size: .875em;
-    color: white;
-    font-weight: 600;
-    text-align: center;
-    line-height: 34px;
-    right: 16px;
-    top: 16px
+    margin-right: 10px;
+    justify-content: center;
+    background-color: #F4F7F8;
 }
 
-.courseItemBox:hover h4 a {
-    color: #591526;
-    transition: all .5s;
+.diplomaProgramDetails {
+    width: 60%;
+    display: inline-flex;
+    margin-bottom: 13px;
+    flex-direction: column;
 }
 
-.courseDesc h4 {
-    font-weight: 600;
-    margin-bottom: 15px;
+.diplomaProgramTitle h6 {
     font-size: 1em;
-    transition: all .5s;
-}
-
-.courseDesc h4 a {
+    font-weight: 600;
     color: #000000;
+    display: inline-block;
+    margin-right: 11px;
 }
 
-.courseDesc p {
-    opacity: .5;
-    font-size: .875em;
-    font-weight: 500;
-    margin-bottom: 14px;
-}
-
-.trainerImg {
-    display: inline-flex;
-    width: 29px;
-    height: 29px;
-    border-radius: 50%;
-    margin-right: 7px;
-}
-
-.trainerName {
-    display: inline-flex;
+.diplomaProgramTitle span {
+    display: inline-block;
+    background-color: #F4F7F8;
     font-size: 0.8125em;
-    font-weight: 600;
-    align-self: center;
-}
-
-.trainer {
-    margin-bottom: 9px;
-    display: flex;
-}
-
-.trainer:hover a {
+    font-weight: bold;
+    width: 69px;
+    height: 25px;
+    padding: 3px 10px;
+    border-radius: 100px;
     color: #761C33
 }
 
-.enrollBtn {
-    float: right;
-    width: 117px;
-    height: 43px;
-    background-color: #FAFAFA;
-    color: #761C33;
+.diplomaProgramDetails p {
+    font-size: 0.8125em;
+    font-weight: bold;
+    color: #1B1B1B;
+    opacity: .6;
+}
+
+.diplomaProgramDetails ul li {
+    display: inline-block;
+    list-style-type: none;
+    font-size: 0.75em;
     font-weight: 600;
-    font-size: .812em;
-    border-radius: 21px;
-    display: flex;
-    border: 1px solid #FAFAFA
+    color: #1B1B1B;
+    opacity: .6;
+    position: relative;
 }
 
-.enrollBtn span {
-    display: flex;
-    align-self: center;
-}
-
-.enrollBtn svg {
-    margin-left: 5px;
-    display: flex;
-    align-self: center;
-}
-
-.enrollBtn:hover {
-    border-color: #761C33;
-    color: #761C33
-}
-
-.counterSection {
-    padding: 72px 0;
-    background-image: url(../images/counterBG.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.counterIcon {
-    display: inline-flex;
-    margin-right: 15px;
-    ;
-    width: 37px;
-}
-
-.counter {
-
+.diplomaProgramDetails ul li:before {
+    content: ".";
+    font-size: 16px;
+    font-weight: 600;
+    color: #1B1B1B;
+    opacity: .6;
     display: inline-block;
 }
 
-.counter span {
+.diplomaProgramDetails ul li:first-child:before {
+    content: ""
+}
+
+.diplomaProgramTitle {
+    margin-bottom: 10px;
+}
+
+.diplomaIcon {
+    display: flex;
+    align-self: center;
+}
+
+.circle-wrap {
+    width: 68px;
+    height: 68px;
+    background: #EEEEEF;
+    border-radius: 50%;
+    display: flex;
+    align-self: center;
+    position: relative;
+    justify-content: center;
+}
+
+.cirularProgressBar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: white;
+    z-index: 100;
+    align-self: center;
     font-size: 2em;
-    font-weight: 600;
+    color: #000
+}
+
+.chart {
+    position: relative;
+}
+
+.chart span {
+    position: absolute;
+    width: 100%;
+    ;
+    font-size: .90em;
+    font-weight: bold;
+    text-align: center;
+    line-height: 65px;
+}
+
+.chart.success {
+    color: #31D894
+}
+
+.diplomaChart h6 {
+    font-size: 0.75em;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 8px
+}
+
+/***********************************************/
+
+
+.joinSec {
+    position: relative;
+    background-image: url("../images/joinBG.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 64px 0 68px;
+    height: 370px;
+    ;
+
+}
+
+.joinDeplomaImg {
+    width: 460px;
+    top: -100px;
+    position: absolute;
+}
+
+.topImg {
+    border-radius: 16px;
+    overflow: hidden;
+    width: 219px;
+    margin-top: -90px;
+    margin-bottom: 30px;
+    ;
+}
+
+.joinSec .sectionTitle {
+    margin-bottom: 25px;
+}
+
+.joinSec h5 {
+    margin-bottom: 0;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+.joinSec p {
+    font-size: .9em;
+    color: #000000;
+    font-weight: 500;
+}
+
+.joinSec .viewVideoBtn {
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+.joinSec .viewVideoBtn:hover {
+    background-color: #591526;
+
+}
+
+.joinSec .viewVideoBtn:hover span {
     color: white;
 }
 
-.counter p {
-    font-size: 0.875em;
+.joinSec .viewVideoBtn:hover .playvideoIcon SVG PATH {
+    stroke: #FFF !important
+}
+
+.joinsecBtn {
+    background-color: #761C33;
+    color: white;
+    width: 191px;
+    height: 43px;
+    margin-top: 34px;
+    border-radius: 21px;
+    ;
+    font-size: .9em;
     font-weight: 600;
-    margin: 0;
+    line-height: 30px;
+    ;
+}
+
+.joinsecBtn:hover {
+    background-color: #591526;
     color: white;
 }
 
+
+.courseDetails-tabs .nav-pills {
+    width: 100%;
+    margin-bottom: 40px;
+
+}
+
+.courseDetails-tabs .nav-pills .nav-link {
+    padding: 12px 18px;
+    font-size: .875em;
+    font-weight: 500;
+    text-align: center;
+    border-radius: 21.5px;
+    border: 1px solid #E1E1E1;
+    margin-right: 10px;
+    align-self: center;
+}
+
+.courseDetails-tabs .nav-pills .nav-link.active {
+    background-color: transparent;
+    color: #761C33;
+    border: 1px solid #761C33
+}
+
+
+.courseDetails-tabs .nav-pills .nav-link:hover {
+    background-color: #761C33;
+    color: white;
+}
+
+.Instructors {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.instructorImg {
+    width: 166px;
+    height: 166px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+
+    position: relative;
+}
+
+.instructorSecDetails {
+    position: relative;
+    padding-top: 25px
+}
+
+.flagIcon {
+    position: absolute;
+    top: -15px;
+    left: 44%;
+    width: 33px;
+    height: 33px;
+    overflow: hidden;
+    z-index: 22;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.InstructorItem h4 {
+    font-size: 1em;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.InstructorItem p {
+    font-size: .875em;
+    opacity: .5;
+    font-weight: 400;
+}
+
+.InstructorItem {
+    text-align: center;
+}
 .owl-carousel .owl-nav {
     position: absolute;
     right: 0;
@@ -780,248 +713,6 @@ header .container-fluid {
     background-color: #761C33;
     border: 1px solid #761C33
 }
-
-.certificate {
-    padding: 74px 0 120px;
-
-}
-
-.certificateBox {
-    border: 1px solid #E9E9E9;
-    border-radius: 16px;
-    ;
-    overflow: hidden;
-}
-
-.certificateImg {
-    clip-path: polygon(0 0, 100% 0%, 100% 80%, 0 100%);
-    overflow: hidden;
-    height: 166px;
-    ;
-}
-
-.certificateDesc {
-    padding: 20px 20px 40px 20px;
-    position: relative;
-
-}
-
-.certificateDesc h4 {
-    font-size: .9em;
-    font-weight: 600;
-    margin-bottom: 12px;
-    ;
-}
-
-.certificateDesc p {
-    font-size: .875em;
-    opacity: .5;
-    margin-bottom: 14px;
-    ;
-}
-
-.certificateDesc h6 {
-    font-size: .875em;
-    color: #761C33;
-    font-weight: 600;
-}
-
-.certificateBtn {
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    background-color: #ECE0E3;
-    color: #761C33;
-    position: absolute;
-    top: -45px;
-    right: 20px;
-    text-align: center;
-    line-height: 37px;
-    border: 1px solid #ECE0E3;
-}
-
-.certificateBtn i {
-    line-height: 35px;
-    ;
-}
-
-.certificateBtn:hover {
-    background-color: transparent;
-    border: 1px solid #761C33;
-    color: #761C33;
-
-}
-
-.joinSec {
-    position: relative;
-    background-image: url("../images/joinBG.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 64px 0 68px;
-    height: 370px;
-    ;
-
-}
-
-
-
-.leftImg {
-    position: relative;
-    float: left;
-    width: 45%;
-    margin-right: 30px;
-    height: 100%
-}
-
-.imageright {
-    float: right;
-    width: 209px;
-    border-radius: 16px;
-    overflow: hidden;
-    margin-top: 5px;
-}
-
-.topImg {
-    border-radius: 16px;
-    overflow: hidden;
-    width: 219px;
-    margin-top: -90px;
-    margin-bottom: 30px;
-    ;
-}
-
-.bottomImg {
-    width: 189px;
-    margin-bottom: -90px;
-    border-radius: 16px;
-    overflow: hidden;
-    position: relative;
-    right: 0;
-}
-
-.joinSec .sectionTitle {
-    line-height: 2;
-    margin-bottom: 0;
-}
-
-.joinSec h5 {
-    line-height: 2;
-    margin-bottom: 0;
-}
-
-.joinsecBtn {
-    background-color: #761C33;
-    color: white;
-    width: 191px;
-    height: 43px;
-    margin-top: 34px;
-    border-radius: 21px;
-    ;
-    font-size: .9em;
-    font-weight: 600;
-    line-height: 30px;
-    ;
-}
-
-.joinsecBtn:hover {
-    background-color: #591526;
-    color: white;
-}
-
-.discount {
-    padding-top: 74px;
-    padding-bottom: 74px;
-}
-
-.discountNum {
-    position: absolute;
-    WIDTH: 62PX;
-    height: 34px;
-    left: 0;
-    top: 30px;
-    text-align: center;
-    background-color: #761C33;
-    font-size: 1.125em;
-    color: white;
-    font-weight: 600;
-
-}
-
-.courseDetails-tabs .nav-pills {
-    width: 100%;
-    margin-bottom: 40px;
-
-}
-
-.courseDetails-tabs .nav-pills .nav-link {
-    padding: 12px 18px;
-    font-size: .875em;
-    font-weight: 500;
-    text-align: center;
-    border-radius: 21.5px;
-    border: 1px solid #E1E1E1;
-    margin-right: 10px;
-    align-self: center;
-}
-
-.courseDetails-tabs .nav-pills .nav-link.active {
-    background-color: transparent;
-    color: #761C33;
-    border: 1px solid #761C33
-}
-
-.mostViewed {
-    padding-top: 104px;
-    padding-bottom: 75px;
-}
-
-.updates {
-    padding: 75px 0
-}
-
-.updateDate {
-    font-size: 1em;
-    font-weight: 500;
-    opacity: .5;
-    margin-bottom: 9px;
-    display: block;
-}
-
-.updateBox .courseDesc {
-    padding: 14px 20px
-}
-
-.courseDetails-tabs .nav-pills .nav-link:hover {
-    background-color: #761C33;
-    color: white;
-}
-
-.instructorImg {
-    width: 166px;
-    height: 166px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: auto;
-    margin-bottom: 20px;
-    ;
-}
-
-.InstructorItem h4 {
-    font-size: 1em;
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
-.InstructorItem p {
-    font-size: .875em;
-    opacity: .5;
-    font-weight: 400;
-}
-
-.InstructorItem {
-    text-align: center;
-}
-
 .InstructorItem .instructorImg img {
     transition: all .5s;
 }
@@ -1038,9 +729,40 @@ header .container-fluid {
     ;
 }
 
-.Instructors {
-    padding-bottom: 74px;
+.instructorSocial {
+    margin-top: 15px
+}
+
+.instructorSocial li {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #EDEDED;
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 7px;
+    transition: all .5s;
     ;
+}
+
+.instructorSocial li:hover {
+    background-color: #591526;
+    transition: all .5s;
+    ;
+
+}
+
+.instructorSocial li:hover a {
+    color: #EDEDED;
+    transition: all .5s;
+    ;
+
+}
+
+.instructorSocial li a {
+    color: #591526;
+    align-self: center;
+    transition: all .5s;
 }
 
 .partners {
@@ -1287,7 +1009,7 @@ footer .container {
 
 .footerList li {
     list-style-type: none;
-    margin-bottom: 22px;
+    margin-bottom: 14px;
     ;
     position: relative;
 
@@ -1331,11 +1053,13 @@ footer .container {
     margin-top: 19px;
     color: #761C33
 }
-.contactFooterList li a{
-    color:#761C33
+
+.contactFooterList li a {
+    color: #761C33
 }
+
 .socialIcons li {
-    list-style-type: no9Fne;
+    list-style-type: none;
     display: inline-block;
     margin-right: 20px;
     color: #9F9F9F;
@@ -2194,6 +1918,23 @@ button.close span {
     ;
 }
 
+.sectionTitle {
+    margin-bottom: 40px;
+}
+
+.sectionTitle h5 {
+    font-size: 1.25em;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.sectionTitle p {
+    font-size: .9em;
+    font-weight: 500;
+
+}
+
 /*************************************/
 .innerHeader {
     background-color: none;
@@ -2425,7 +2166,7 @@ button.close span {
 
 .SuggestCourseForm .halfForm-group {
     width: 48.5%;
-  float: left;
+    float: left;
 }
 
 .SuggestCourseForm .marginFormGroup {
@@ -3858,7 +3599,7 @@ element.style {}
 }
 
 .scrollNav {
-   top: 59px ;
+    top: 59px;
     z-index: 99999999999999999999999;
     animation-duration: .5s;
     position: fixed !important;
@@ -4516,7 +4257,7 @@ textarea {
 }
 
 .lessonBody .coursesTabsSection.scrollNav {
-/*top: 255px !important;*/
+    /*top: 255px !important;*/
     z-index: 90;
 }
 
@@ -4693,9 +4434,11 @@ textarea {
 .step-tab-panel .selectric-scroll ul {
     margin-bottom: 0;
 }
-.loginForm .dategroup{
+
+.loginForm .dategroup {
     position: relative;
 }
+
 .stepsForm .dategroup:after {
     right: 25px;
     top: 21px;
@@ -6039,7 +5782,8 @@ article a {
     border-radius: 5px !important;
 }
 
-.calamansi-skin--calamansi-compact .clmns--info,.calamansi-skin--calamansi-compact{
+.calamansi-skin--calamansi-compact .clmns--info,
+.calamansi-skin--calamansi-compact {
     background: transparent !important;
     box-shadow: none !important;
 }
@@ -6053,45 +5797,59 @@ article a {
 .calamansi-skin--calamansi-compact .clmns--shuffle:hover {
     color: #761C33 !important;
 }
-.calamansi-skin--calamansi-compact .clmns--controls .clmns--play, .calamansi-skin--calamansi-compact .clmns--controls{
+
+.calamansi-skin--calamansi-compact .clmns--controls .clmns--play,
+.calamansi-skin--calamansi-compact .clmns--controls {
     color: #761C33 !important;
 }
-.calamansi-skin--calamansi-compact .clmns--controls .clmns--center > div,.clmns--right > div{
+
+.calamansi-skin--calamansi-compact .clmns--controls .clmns--center>div,
+.clmns--right>div {
     width: 34px;
     height: 34px;
     border-radius: 50% !important;
-    justify-content:center;
+    justify-content: center;
     margin: 0 !important;
     text-align: center;
     padding: 10px;
 }
-.calamansi-skin--calamansi-compact .clmns--controls .clmns--center > div i{
+
+.calamansi-skin--calamansi-compact .clmns--controls .clmns--center>div i {
     align-self: center;
 }
-.calamansi-skin--calamansi-compact .clmns--controls .clmns--center{
+
+.calamansi-skin--calamansi-compact .clmns--controls .clmns--center {
     display: inline-flex !important;
     flex: inherit !important;
 }
 
-.calamansi-skin--calamansi-compact .clmns--custom-checkbox input ~ i{
-    
-    color:#D4D4D4 !important
+.calamansi-skin--calamansi-compact .clmns--custom-checkbox input~i {
+
+    color: #D4D4D4 !important
 }
-.calamansi-skin--calamansi-compact .clmns--custom-checkbox input:checked ~ i{
-    color:#761C33 !important
+
+.calamansi-skin--calamansi-compact .clmns--custom-checkbox input:checked~i {
+    color: #761C33 !important
 }
-.calamansi-skin--calamansi-compact .clmns--custom-checkbox input{
-    left:11px !important
+
+.calamansi-skin--calamansi-compact .clmns--custom-checkbox input {
+    left: 11px !important
 }
-.clmns--volume,.clmns--currently-playing{
+
+.clmns--volume,
+.clmns--currently-playing {
     display: none !important;
 }
-.clmns--toggle-playlist{
+
+.clmns--toggle-playlist {
     display: none;
 }
-.calamansi-skin--calamansi-compact .clmns--controls .clmns--center .clmns--play,.calamansi-skin--calamansi-compact .clmns--controls .clmns--center .clmns--pause{
+
+.calamansi-skin--calamansi-compact .clmns--controls .clmns--center .clmns--play,
+.calamansi-skin--calamansi-compact .clmns--controls .clmns--center .clmns--pause {
     background-color: rgba(118, 28, 51, .15) !important;
 }
+
 @media(max-width:767px) {
     body {
         font-size: 14px
@@ -6117,7 +5875,7 @@ article a {
 
     .joinBtn {
         float: left;
-    margin-left:7px
+        margin-left: 7px
     }
 
     .navbar-expand-lg .navbar-nav .nav-item .nav-link {
@@ -6455,35 +6213,45 @@ article a {
         ;
     }
 
-    #coursesTabContent .row{
+    #coursesTabContent .row {
         width: 100%;
     }
-    .lectureImg{
+
+    .lectureImg {
         margin: auto;
         float: none;
     }
+
     #coursesTabContent .lectureDetailsBox {
-        padding:10px
+        padding: 10px
     }
-    .lectureDesc{
+
+    .lectureDesc {
         float: none;
-        width: 100%;;text-align: center;
+        width: 100%;
+        ;
+        text-align: center;
         margin-top: 15px;
     }
+
     .CertificateDetailsImg {
         width: 100%;
         float: none;
         margin-right: 0;
         margin-bottom: 20px;
     }
-    .helpful{
+
+    .helpful {
         display: block;
     }
-    .helpfulAnswer{
-        margin-top:20px
+
+    .helpfulAnswer {
+        margin-top: 20px
     }
-    .replayText{
-        max-width: 100%;;
+
+    .replayText {
+        max-width: 100%;
+        ;
     }
 }
 
