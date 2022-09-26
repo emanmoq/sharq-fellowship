@@ -62,6 +62,312 @@ ul {
     justify-content: space-around;
 }
 
+/******************* Login Page ******************/
+.loginImg {
+    width: 137;
+    height: 137px;
+    border-radius: 50%;
+    padding: 8.5px;
+    border: 1px solid white;
+    margin: auto;
+    margin-top: -62px;
+    position: absolute;
+    top: 0;
+    left: 34%;
+}
+
+.loginBodySec {
+    position: relative;
+    min-height: 100%;
+    ;
+}
+
+.loginBodySecImg {
+    position: absolute;
+    background-image: url("../images/bglogin.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    width: 50%;
+    top: 0;
+    right: 0
+}
+
+.loginPageBody {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    flex-direction: column;
+}
+
+.loginPageForm {
+    align-self: center;
+    text-align: center;
+}
+
+.loginTitle {
+    margin-bottom: 30px;
+    text-align: left;
+}
+.loginTitle h6{
+    font-size: 1.1875em;
+    font-weight: 600;
+}
+.loginTitle p{
+    margin-top:10px;
+    font-size:.875em;
+    font-weight: 500;
+}
+
+.loginLogo {
+    margin: auto;
+    width: 200px;
+    margin-bottom: 47px;
+}
+
+.checkmarkCont.loginCheck {
+    font-size: .875em;
+    margin-top: 26px;
+    padding-left: 15px;
+    font-weight: 500;
+}
+
+.loginCheck .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    border: 1px solid #18B595;
+}
+
+
+/* Customize the label (the container) */
+.loginCheck {
+    position: relative;
+    padding-left: 24px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    float: left
+}
+
+/* Hide the browser's default checkbox */
+.loginCheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* When the checkbox is checked, add a blue background */
+.loginCheck input:checked~.checkmark {
+    background-color: #18B595;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.loginCheck .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.loginCheck input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.loginCheck .checkmark:after {
+    left: 6px;
+    top: 2px;
+    width: 6px;
+    height: 10px;
+    border: solid white;;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+.modal-body {
+    padding: 0
+}
+
+.modal {
+    overflow: auto;
+}
+
+.modal-open .modal {
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+button.close {
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 30px;
+    height: 30px;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    ;
+    justify-content: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+}
+
+button.close span {
+    color: #A9A9A9;
+    align-self: center;
+}
+
+.modal-header {
+    justify-content: center;
+    border-bottom: 0;
+}
+
+.modal-title {
+    font-size: 1.1875em;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 25px
+}
+
+.loginForm {
+    width: 344px;
+    margin: auto
+}
+
+.form-control:focus {
+    box-shadow: none;
+    outline: 0;
+    border: 0;
+    border: 1px solid #E2E2E2;
+}
+
+.loginForm .form-control {
+    height: 56px;
+    width: 100%;
+    background-color: #FBFBFB;
+    border-radius: 28px;
+    border: 1px solid #E2E2E2;
+    font-size: .875em;
+    font-weight: 500;
+    color: #6E6E6E
+}
+
+.loginForm .form-control::placeholder {
+    font-size: .875em;
+    font-weight: 500;
+    color: #6E6E6E;
+
+}
+
+.loginForm .form-group {
+    position: relative;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.loginForm .form-group:last-child {
+    margin-bottom: 25px;
+    ;
+}
+
+.showHidePass {
+    position: absolute;
+    right: 17px;
+    top: 20px;
+    font-size: 17px;
+    color: #808080
+}
+
+.showPass {
+    display: none;
+}
+
+.forgetLink {
+    display: flex;
+    font-size: .875em;
+    color: #6E6E6E;
+    text-align: center;
+    font-weight: 500;
+    justify-content: center;
+    transition: all .5s;
+    ;
+    display: block;
+}
+
+.forgetLink:hover {
+    color: #591526;
+    transition: all .5s;
+    ;
+}
+
+.loginBtns span {
+    display: block;
+    align-self: center;
+    width: 100%;
+}
+
+.signBtn:hover {
+    background-color: #591526;
+    color: white;
+}
+
+.signBtn {
+    background-color: #761C33;
+    color: white;
+    font-size: 16px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.loginBtns {
+    display: flex;
+    width: 100%;
+    border-radius: 28px;
+    ;
+    height: 56px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.signUpLintexe {
+    margin-top: 30px;
+    color: #6E6E6E;
+    font-size: .875em;
+    font-weight: 500;
+    display: flex;
+    align-self: center;
+    margin-bottom: 30px;
+}
+.signUpLintexe a{
+    color:#591526;
+    margin-left: 5px;
+}
+.forgetPassBody .loginBodySecImg{
+right: auto;
+left:0;
+}
+.forgetPassBody .loginPageBody{
+    right:0;
+    left:auto
+}
+/************************************************/
 header .container-fluid {
     padding-left: 80px;
     padding-right: 80px;
@@ -661,6 +967,7 @@ header .container-fluid {
 .InstructorItem {
     text-align: center;
 }
+
 .owl-carousel .owl-nav {
     position: absolute;
     right: 0;
@@ -713,6 +1020,7 @@ header .container-fluid {
     background-color: #761C33;
     border: 1px solid #761C33
 }
+
 .InstructorItem .instructorImg img {
     transition: all .5s;
 }
@@ -1186,247 +1494,7 @@ footer .container {
     position: relative;
 }
 
-.loginImg {
-    width: 137;
-    height: 137px;
-    border-radius: 50%;
-    padding: 8.5px;
-    border: 1px solid white;
-    margin: auto;
-    margin-top: -62px;
-    position: absolute;
-    top: 0;
-    left: 34%;
-}
 
-.modal-body {
-    padding: 0
-}
-
-.modal {
-    overflow: auto;
-}
-
-.modal-open .modal {
-    overflow-x: scroll;
-    overflow-y: scroll;
-}
-
-button.close {
-    padding: 0;
-    margin: 0;
-    float: left;
-    width: 30px;
-    height: 30px;
-    background-color: #F2F2F2;
-    border-radius: 50%;
-    ;
-    justify-content: center;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    font-size: 13px;
-}
-
-button.close span {
-    color: #A9A9A9;
-    align-self: center;
-}
-
-.modal-header {
-    justify-content: center;
-    border-bottom: 0;
-}
-
-.modal-title {
-    font-size: 1.1875em;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 25px
-}
-
-.loginForm {
-    width: 344px;
-    margin: auto
-}
-
-.form-control:focus {
-    box-shadow: none;
-    outline: 0;
-    border: 0;
-    border: 1px solid #E2E2E2;
-}
-
-.loginForm .form-control {
-    height: 56px;
-    width: 100%;
-    background-color: #FBFBFB;
-    border-radius: 28px;
-    border: 1px solid #E2E2E2;
-    font-size: .875em;
-    font-weight: 500;
-    color: #6E6E6E
-}
-
-.loginForm .form-control::placeholder {
-    font-size: .875em;
-    font-weight: 500;
-    color: #6E6E6E;
-
-}
-
-.loginForm .form-group {
-    position: relative;
-    margin-bottom: 15px;
-    width: 100%;
-}
-
-.loginForm .form-group:last-child {
-    margin-bottom: 25px;
-    ;
-}
-
-.showHidePass {
-    position: absolute;
-    right: 17px;
-    top: 20px;
-    font-size: 17px;
-    color: #808080
-}
-
-.showPass {
-    display: none;
-}
-
-.forgetLink {
-    display: flex;
-    font-size: .875em;
-    color: #6E6E6E;
-    text-align: center;
-    font-weight: 500;
-    justify-content: center;
-    transition: all .5s;
-    ;
-    display: block;
-}
-
-.forgetLink:hover {
-    color: #591526;
-    transition: all .5s;
-    ;
-}
-
-.loginBtns span {
-    display: block;
-    align-self: center;
-    width: 100%;
-}
-
-.signBtn:hover {
-    background-color: #591526;
-    color: white;
-}
-
-.signBtn {
-    background-color: #761C33;
-    color: white;
-    font-size: 16px;
-    margin-top: 30px;
-    justify-content: center;
-}
-
-.loginBtns {
-    display: flex;
-    width: 100%;
-    border-radius: 28px;
-    ;
-    height: 56px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-
-.orText {
-    font-size: .875em;
-    color: #6E6E6E;
-    margin-bottom: 19px;
-    border-bottom: 1px solid #E2E2E2;
-    line-height: 0.1em;
-    width: 100%;
-    text-align: center;
-    display: block;
-}
-
-.orText span {
-    background: #fff;
-    padding: 0 7px;
-}
-
-.googleBtn {
-    background-color: white;
-    border: 1px solid #E0E0E0;
-    color: black;
-    font-size: 0.875em;
-    justify-content: center;
-
-}
-
-.googleBtn:hover {
-    color: #db3236;
-    ;
-}
-
-.googleBtn span.loginbtnIcon {
-    display: flex;
-    align-self: center;
-    width: 26px;
-}
-
-.loginbtnIcon i {
-    border-radius: 50%;
-}
-
-.facebookBtn {
-    background-color: #3A76EA;
-    color: white;
-}
-
-.facebookBtn .loginbtnIcon {
-    width: 26px;
-    height: 26px;
-    background-color: white;
-    display: flex;
-    border-radius: 50%;
-    overflow: hidden;
-    justify-content: center;
-}
-
-.facebookBtn .loginbtnIcon i {
-    color: #3A76EA;
-    align-self: end;
-    font-size: 20px;
-}
-
-.facebookBtn:hover {
-    background-color: #2b5099;
-    color: white;
-}
-
-.facebookBtn:hover .loginbtnIcon i {
-    color: #2b5099;
-
-}
-
-.signUpLink {
-    color: #761C33;
-    margin-left: 10px;
-}
-
-.signUpLintexe {
-    margin-top: 30px;
-    color: #6E6E6E;
-    font-size: .875em;
-    font-weight: 500;
-}
 
 .dategroup i {
     position: absolute;
@@ -3673,7 +3741,7 @@ element.style {}
     float: left;
     position: relative;
     left: 0;
-    ;
+    padding-top: 70px;
 }
 
 .coursepage-tabs .nav-link.active:before {
