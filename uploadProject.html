@@ -981,7 +981,7 @@
         <div class="courseVideoAndDetails">
             <div class="col-md-12">
                 <div class="videoSec clearfix">
-                    <div class="videoTitle clearfix">
+                    <div class="videoTitle text-videoTitle clearfix">
                         <div class="diplomaChart">
                             <div class="videoChart Chart" data-percent="45"><span>45%</span></div>
                         </div>
@@ -996,12 +996,18 @@
                             </div>
                         </div>
                     </div>
-                    <div id="videoSecCont"> <video controls>
-                            <source src="assets/images/1.mp4" type="video/mp4">
-
-                            Your browser does not support the video tag.
-                        </video>
-
+                    <div class="textContainer uploadProjConCont homeworkCont text-center">
+                        <i class="downloadLessonIcon"><img src="assets/images/elearning1.svg" alt=""></i>
+                        <div class="sectionTitle text-center">
+                            <h5>project</h5>
+                        </div>
+                        <p>Learn Social Sciences and Middle East politics from experts and distinguished instructors.
+                            Learn Social Sciences and Middle East politics from experts and distinguished instructors.
+                        </p>
+                        <label class="commonBtn uploadHomeworkBtn btn" for="fileUpload">
+                            <input type="file" id="fileUpload">
+                            <span>Upload</span>
+                        </label>
                     </div>
                 </div>
             </div>
@@ -1563,22 +1569,7 @@
     <script type="text/javascript" src="assets/js/jquery.selectric.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
 
-    <script type="text/javascript"
-        src="assets/lib/video-player-lazy-load-rtop/dist/js/rtop.videoPlayer.1.0.0.min.js"></script>
-    <script>
-        var myPlayer = $('#videoSecCont').RTOP_VideoPlayer({
-            showControls: true,
-            showControlsOnHover: true,
-            controlsHoverSensitivity: 3000,
-            showScrubber: true,
-            showTimer: false,
-            showPlayPauseBtn: true,
-            showSoundControl: true,
-            showFullScreen: true,
-            keyboardControls: true,
-        })
 
-    </script>
     <script type="text/javascript" src="assets/js/main.js"></script>
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script src="assets/js/waypoints-min.js"></script>

@@ -113,13 +113,15 @@ ul {
     margin-bottom: 30px;
     text-align: left;
 }
-.loginTitle h6{
+
+.loginTitle h6 {
     font-size: 1.1875em;
     font-weight: 600;
 }
-.loginTitle p{
-    margin-top:10px;
-    font-size:.875em;
+
+.loginTitle p {
+    margin-top: 10px;
+    font-size: .875em;
     font-weight: 500;
 }
 
@@ -192,7 +194,8 @@ ul {
     top: 2px;
     width: 6px;
     height: 10px;
-    border: solid white;;
+    border: solid white;
+    ;
     border-width: 0 3px 3px 0;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -355,85 +358,104 @@ button.close span {
     align-self: center;
     margin-bottom: 30px;
 }
-.signUpLintexe a{
-    color:#591526;
+
+.signUpLintexe a {
+    color: #591526;
     margin-left: 5px;
 }
-.forgetPassBody .loginBodySecImg{
-right: auto;
-left:0;
+
+.forgetPassBody .loginBodySecImg {
+    right: auto;
+    left: 0;
 }
-.forgetPassBody .loginPageBody{
-    right:0;
-    left:auto
+
+.forgetPassBody .loginPageBody {
+    right: 0;
+    left: auto
 }
-.instructorPageBody .tab-pane{
+
+.instructorPageBody .tab-pane {
     display: none;
 }
-.instructorPageBody .tab-pane.show{
+
+.instructorPageBody .tab-pane.show {
     display: block;
 }
-.instructorDetailsPageHeader{
+
+.instructorDetailsPageHeader {
     height: 180px;
 }
-.InstructorDetailsPage{
-    padding-top:35px;
+
+.InstructorDetailsPage {
+    padding-top: 35px;
     padding-bottom: 70px;
 }
-.InstuctorNameImg{
+
+.InstuctorNameImg {
     width: 170px;
     height: 170px;
     border-radius: 50%;
-    margin-top:-100px;
+    margin-top: -100px;
     margin-bottom: 20px;
 }
-.InstructorNameDetails{
+
+.InstructorNameDetails {
     padding-bottom: 70px;
 }
-.InstructorNameDetails h5,.InstructorNameDetails h6{
+
+.InstructorNameDetails h5,
+.InstructorNameDetails h6 {
     font-size: 1.125em;
     font-weight: 600;
     margin-bottom: 15px;
 }
-.InstructorNameDetails h6{
-    font-size:1em
+
+.InstructorNameDetails h6 {
+    font-size: 1em
 }
-.InstructorNameDetails p{
-    font-size:.875em;
+
+.InstructorNameDetails p {
+    font-size: .875em;
     margin-bottom: 27px;
     opacity: .71;
 }
-.InstructorNameDetails .badge{
-    margin-right:10px;
-    padding:11px 15px;
+
+.badge {
+    margin-right: 10px;
+    padding: 11px 15px;
     background-color: #E6E6E6;
     border-radius: 100px;
     text-align: center;
     font-size: .875em;
     font-weight: 500;
 }
-.instructorMoreDetailsBox{
-    border:1px solid #E9E9E9;
+
+.instructorMoreDetailsBox {
+    border: 1px solid #E9E9E9;
     border-radius: 16px;
-    padding:45px 20px
+    padding: 45px 20px
 }
-.instructorMoreDetailsList li{
-    margin-bottom: 25px;;
+
+.instructorMoreDetailsList li {
+    margin-bottom: 25px;
+    ;
     font-size: 1em;
     font-weight: 500;
     list-style: none;
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
 }
 
-.instructorMoreDetailsList li span{
+.instructorMoreDetailsList li span {
     align-self: center;
 }
-.instructorMoreDetailsList li span:last-child{
-margin-left: auto;
-display: inline-flex;
-flex-direction: column;
+
+.instructorMoreDetailsList li span:last-child {
+    margin-left: auto;
+    display: inline-flex;
+    flex-direction: row;
 }
+
 .countryFlag {
     width: 30px;
     height: 30px;
@@ -441,14 +463,16 @@ flex-direction: column;
     overflow: hidden;
     margin-right: 7px;
     display: inline-block;
-    border:2px solid white;
-    box-shadow: 0 4px 40px rgba(0 , 0, 0, .1);
+    border: 2px solid white;
+    box-shadow: 0 4px 40px rgba(0, 0, 0, .1);
     align-self: center;
 }
-.countryFlag img{
+
+.countryFlag img {
     width: fit-content;
     height: 100%;
 }
+
 /************************************************/
 header .container-fluid {
     padding-left: 80px;
@@ -756,11 +780,14 @@ header .container-fluid {
     display: flex;
     width: 100%;
     margin-bottom: 16px;
-    transition: all .5s;;
+    transition: all .5s;
+    ;
 }
-.diplomaProgramBox:hover{
-    transition: all .5s;;
-    box-shadow: 0 10px 25px rgba(0,0,0,.2);
+
+.diplomaProgramBox:hover {
+    transition: all .5s;
+    ;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .2);
 }
 
 .diplomaProgram .sectionTitle {
@@ -784,9 +811,11 @@ header .container-fluid {
     margin-bottom: 13px;
     flex-direction: column;
 }
+
 .diplomaProgramTitle h6 {
     display: inline-block;
 }
+
 .diplomaProgramTitle h6 a {
     font-size: 1em;
     font-weight: 600;
@@ -794,9 +823,10 @@ header .container-fluid {
     display: inline-block;
     margin-right: 11px;
 }
+
 .diplomaProgramBox:hover .diplomaProgramTitle h6 a {
-    color:#591526
-} 
+    color: #591526
+}
 
 .diplomaProgramTitle span {
     display: inline-block;
@@ -883,64 +913,78 @@ header .container-fluid {
     font-weight: bold;
     text-align: center;
     line-height: 65px;
+    opacity: 1 !important;
 }
 
 .chart.success {
     color: #31D894
 }
-.chart.InProgress{
-    color:#FFCE21
+
+.chart.InProgress span {
+    color: #FFCE21 !important
 }
-.diplomaProgramBox .diplomaChart{
+
+.diplomaProgramBox .diplomaChart {
     margin-left: auto;
 
 }
+
 .diplomaChart h6 {
     font-size: 0.75em;
     font-weight: bold;
     color: #000000;
     margin-top: 8px
 }
-.coursesHeader .DiplomaListDetails li:before ,.coursesHeader .DiplomaListDetails li{
-    color:white;
+
+.coursesHeader .DiplomaListDetails li:before,
+.coursesHeader .DiplomaListDetails li {
+    color: white;
     opacity: 1;
     font-size: .75em;
 }
-.headerProgressBar{
+
+.headerProgressBar {
     background-color: #EEEEEF;
     height: 6px;
     margin-bottom: 25px;
     border-radius: 25px;
     overflow: hidden;
 }
-.headerProgressBar .progress-bar{
+
+.headerProgressBar .progress-bar {
     background-color: #31D894;
 }
-.diplomaProgramPagination{
+
+.diplomaProgramPagination {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top:60px
+    margin-top: 60px
 }
-.page-item:first-child .page-link, .page-item:last-child .page-link{
-background-color: #591526 !important;
-color:white !important
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+    background-color: #591526 !important;
+    color: white !important
 }
-.page-item.disabled .page-link{
-background-color: #E2E2E2 !important;
-color:#6E6E6E !important;
-cursor:auto
+
+.page-item.disabled .page-link {
+    background-color: #E2E2E2 !important;
+    color: #6E6E6E !important;
+    cursor: auto
 }
-.lockedCourse{
-    width:68px;
+
+.lockedCourse {
+    width: 68px;
     height: 68px;
     border-radius: 50%;
-    border:3px solid #EEEEEF;
+    border: 3px solid #EEEEEF;
     display: inline-flex;
     justify-content: center;
 }
-.lockedCourseImg{
-    background-color:#EEEEEF;
+
+.lockedCourseImg {
+    background-color: #EEEEEF;
     display: flex;
     justify-content: center;
     width: 40px;
@@ -948,9 +992,12 @@ cursor:auto
     border-radius: 50%;
     align-self: center;
 }
-.lockedCourseImg i{
-    align-self: center;color: white;
+
+.lockedCourseImg i {
+    align-self: center;
+    color: white;
 }
+
 /***********************************************/
 
 
@@ -1395,6 +1442,7 @@ footer .container {
     transition: all .5s;
     ;
     opacity: 0;
+    background-color: white;
 }
 
 .up:hover {
@@ -2174,6 +2222,16 @@ footer .container {
     color: white
 }
 
+.coursesHeader h5 span {
+    padding: 5px;
+    font-size: 13px;
+    color: #761C33;
+    background-color: white;
+    margin-left: 10px;
+    border-radius: 100px;
+    font-weight: bold;
+}
+
 .coursesHeader span {
     font-weight: 500;
     font-size: 0.9375em;
@@ -2252,10 +2310,11 @@ footer .container {
     margin: 0;
 }
 
- .breadcrumb .breadcrumb-item a {
+.breadcrumb .breadcrumb-item a {
     color: white;
 }
- .breadcrumb .breadcrumb-item.active {
+
+.breadcrumb .breadcrumb-item.active {
     color: white;
 }
 
@@ -2422,7 +2481,7 @@ footer .container {
 .SuggestCourseForm textarea.form-control {
     resize: none;
     border-radius: 28px;
-    height: 112px;
+    height: 122px;
 }
 
 .countriesFlagGroup {
@@ -3179,8 +3238,12 @@ element.style {}
 
 }
 
-.aboutCourse {
-    padding: 30px;
+#coursesTabContent {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    ;
+    padding-left: 50px;
+    padding-right: 35px;
 }
 
 .aboutCourseTitle {
@@ -3198,15 +3261,28 @@ element.style {}
 }
 
 .aboutCourse .enrollBtn,
-.Learnerreviews .enrollBtn {
+.Learnerreviews .enrollBtn,
+.coursecomments .enrollBtn {
     float: none;
+    display: inline-flex;
+    margin: 16px auto;
+    background-color: #F7F7F7;
+    color: #761C33;
+    width: auto;
+
+}
+
+.btnContainer {
+    justify-content: center;
     display: flex;
-    margin: auto
+}
+
+.enrollBtn svg {
+    margin-left: 6px
 }
 
 .lectureDetails {
     padding-top: 40px;
-
 }
 
 .lectureDetails .aboutCourseTitle {
@@ -3223,10 +3299,6 @@ element.style {}
 
 #coursesTabContent .aboutCourse {
     padding-left: 0;
-}
-
-#coursesTabContent {
-    padding-left: 40px
 }
 
 
@@ -3549,6 +3621,265 @@ element.style {}
     ;
 }
 
+.pathesCoursesBox li {
+    list-style-type: none;
+    padding: 12px 20px;
+    border: 1px solid #E9E9E9;
+    border-radius: 16px;
+    margin-bottom: 16px;
+}
+
+.pathesBoxIconCont {
+    background-color: #F4F7F8;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    margin-right: 18px;
+}
+
+.pathesBoxIconCont i {
+    align-self: center;
+}
+
+.pathesBoxDetails {
+    display: inline-block;
+    float: right;
+    width: 60%;
+}
+
+.pathesBoxDetails .badge {
+    font-size: 0.625em;
+    font-weight: 500;
+    padding: 5px;
+    margin-right: 4px;
+    margin-bottom: 5px;
+}
+
+.pathesBoxDetails .badge:last-child {
+    margin-right: 0;
+
+}
+
+.pathesBoxDetails h4 {
+    font-size: 1em;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 11px;
+}
+
+/*****************************************/
+.videoTitle.text-videoTitle {
+    background-color: #761C33;
+    position: relative;
+}
+
+.textContainer {
+    background-image: url("../images/videoBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 24px 51px;
+    position: relative;
+    height: 450px;
+}
+
+.textContainer p {
+    font-size: .9em;
+    font-weight: 500;
+}
+
+.LessondownloadFileCont.textContainer {
+    background-image: url(../images/downloadFileBG.png);
+    padding-top: 80px;
+}
+
+.downloadLessonIcon {
+    width: 60px;
+    margin: auto;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.LessondownloadFileCont p {
+    font-size: .85em;
+    text-align: center;
+    max-width: 60%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.LessondownloadFileCont .CertificateDownloadBtn {
+    width: 204px;
+    margin: auto;
+}
+
+.textContainer.zoomCont {
+    padding-top: 135px;
+    background-image: url(../images/zoomBg.png);
+}
+
+.textContainer .sectionTitle {
+    margin-bottom: 16px;
+}
+
+.zoomLink {
+    font-size: .85em;
+    color: #136DFF;
+    font-weight: 500;
+}
+
+.uploadHomeworkBtn {
+    width: 204px;
+    background-color: transparent;
+    border: 1px solid #761C33;
+    color: #761C33;
+    border-radius: 21.5px;
+    cursor: pointer;
+}
+
+.uploadHomeworkBtn:hover {
+    background-color: #591526;
+    color: white;
+}
+
+.textContainer.homeworkCont {
+    padding-top: 95px;
+    background-image: url(../images/homeworkBG.png);
+}
+
+.textContainer.uploadProjConCont {
+    padding-top: 95px;
+    background-image: url(../images/projectBG.png);
+}
+
+.ScheduleBody {
+    padding: 40px 0 50px
+}
+
+.headerDiplomaBtn {
+    background-color: white;
+    width: 204px;
+    height: 43px;
+    margin-top: 21px;
+    color: #761C33;
+    font-weight: 600;
+}
+
+.headerDiplomaBtn span {
+    color: #761C33;
+    font-weight: 600;
+}
+
+.MyMarks {
+    border: 1px solid #E9E9E9;
+    border-radius: 16px;
+    width: 100%;
+    border-collapse: separate;
+    overflow: hidden;
+    border-spacing: 0;
+
+}
+
+.MyMarks thead th,
+.MyMarks td,
+.MyMarks tfoot td {
+    background-color: #F7F7F7;
+    padding: 22px 0;
+    font-size: 1em;
+    font-weight: 600;
+    overflow: hidden;
+}
+
+.MyMarks td {
+    background-color: white;
+}
+
+.MyMarks td:last-child,
+.MyMarks thead th:last-child {
+    font-weight: 500;
+}
+
+.MyMarks td:last-child {
+    color: #119A4A
+}
+.langCheckBoxInput {
+    position: absolute;
+    width: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.langCheckBox span {
+    align-self: center;
+}
+
+.langCheckBox {
+    font-size: .9em;
+    width: auto;
+    padding: 0 28px;
+    height: 56px;
+    background-color: #FBFBFB;
+    border-radius: 28px;
+    color: #6E6E6E;
+    display: inline-flex;
+    border: 1px solid #E2E2E2;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 10px;
+}
+/* When the checkbox is checked, add a blue background */
+.langCheckCont input:checked ~ .langCheckBox {
+    color: #591526; 
+    border: 1px solid #591526;
+}
+.stepsForm .sendSuggestBtn{
+    margin-top:20px
+}
+#ExamInfo{
+    direction: rtl;
+    text-align: right;
+    position: relative;
+}
+.slidecontainer{
+    margin-bottom: 20px;
+}
+.slidecontainer span{
+    float: right;
+    width: 50px;
+    text-align: right;
+}
+.slidecontainer{
+    width: 100%;;
+margin-bottom: 10px;
+}
+.slidecontainer  span{
+    font-size: 14px;
+    font-weight: 500;
+}
+.slidecontainer input:focus{
+    box-shadow: 0;
+    outline: 0;
+}
+.ui-widget{
+    height: 6px;
+    border:0;
+    background-color: #EEEEEF;
+}
+.ui-widget-header{
+   background: #761C33
+}
+.ui-widget.ui-widget-content{
+    border:0
+}
+.ui-slider .ui-slider-handle{
+    width: 19px;
+    height: 19px;
+    border-radius: 50%;
+    background-color: #761C33;
+    border:3px solid #fff;
+    top: -8px;
+}
 .removeHeader {
     display: none;
     transition: all .5s;
@@ -3678,6 +4009,10 @@ element.style {}
     position: relative;
     border: 0;
     font-size: 13px;
+}
+
+.innerCurriculumList li a i {
+    float: right;
 }
 
 .innerCurriculumList {
@@ -3855,26 +4190,23 @@ element.style {}
 
 .sideCurriclum {
     margin-top: 0;
-    width: 21%;
-    position: sticky;
+    width: 25%;
+
     display: inline-block;
-    height: auto;
-    overflow: auto;
     height: auto;
     border-radius: 0;
     overflow: auto;
     float: left;
     z-index: 99;
     padding-top: 28px;
-    top: 69px;
+    top: 0;
 }
 
 .courseVideoAndDetails {
-    width: 79%;
+    width: 75%;
     float: left;
     position: relative;
     left: 0;
-    padding-top: 70px;
 }
 
 .coursepage-tabs .nav-link.active:before {
@@ -3900,11 +4232,16 @@ element.style {}
 
 .videoSec video {
     width: 100%;
-    height: 500px;
+    height: 512px;
     object-fit: fill;
 }
 
 .videoSec {
+    position: relative;
+
+}
+
+.rtopVideoPlayerWrapper {
     position: relative;
 }
 
@@ -3915,13 +4252,26 @@ element.style {}
     left: 0;
     padding: 11px 20px;
     background-color: transparent;
-    border-bottom: 1px solid #F4F4F4;
+    z-index: 9999;
+    height: 58px;
 }
 
 .videoTitle h6 {
     font-size: 13px;
     font-weight: 600;
     color: white;
+
+}
+
+.videoTitle .diplomaChart {
+    float: left;
+}
+
+.videoTitle .diplomaChart .chart span {
+    font-size: 11px;
+    font-weight: bold;
+    color: #FFCE21;
+    line-height: 40px;
 }
 
 .videoTitle p {
@@ -3931,6 +4281,15 @@ element.style {}
     opacity: .5;
     margin-top: 5px;
     ;
+}
+
+.videoTitle .headerProgressBar {
+    width: 100%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin: 0;
 }
 
 /* Customize the label (the container) */
@@ -4013,10 +4372,10 @@ element.style {}
 .sideCurriclum .CurriculumList li .innerCurriculumList li {
     padding: 8px;
     position: relative;
-    margin-bottom: 8px;
-    padding: 16px;
+    margin-bottom: 12px;
+    padding: 0;
+    padding-top: 16px;
     padding-left: 10;
-    padding-right: 0;
     ;
 
 }
@@ -4096,8 +4455,14 @@ element.style {}
 .videoTitle span {
     font-size: 13px;
     font-weight: 600;
-    display: none;
     color: white;
+    opacity: 50%;
+}
+
+.videoTitleDetails {
+    align-self: center;
+    margin-left: 13px;
+    float: left;
 }
 
 .scrollVideo.videoSec span {
@@ -6050,8 +6415,9 @@ article a {
 .calamansi-skin--calamansi-compact .clmns--controls .clmns--center .clmns--pause {
     background-color: rgba(118, 28, 51, .15) !important;
 }
-.instructorPageBody .InstructorItem{
-margin-bottom: 40px;
+
+.instructorPageBody .InstructorItem {
+    margin-bottom: 40px;
 }
 
 /*****************/
@@ -6061,36 +6427,41 @@ margin-bottom: 40px;
     border: 1px solid #6E6E6E;
     height: 34px;
     margin-right: 13px;
-    border:0;
-    border:1px solid #761C33;
+    border: 0;
+    border: 1px solid #761C33;
 
     text-align: center;
     background-color: white;
-    color:#761C33;
-    font-size:.9em;
+    color: #761C33;
+    font-size: .9em;
     border-radius: 25px;
-    padding:0;
-    margin-right:15px;
-    padding:0px 15px;
+    padding: 0;
+    margin-right: 15px;
+    padding: 0px 15px;
     height: 34px;
     display: inline-flex;
     justify-content: center;
 }
-.ParticipantsPills .nav-link span{
+
+.ParticipantsPills .nav-link span {
     align-self: center;
 }
-.ParticipantsPills.nav-tabs .nav-link.active{
+
+.ParticipantsPills.nav-tabs .nav-link.active {
     background-color: #591526;
-    color:white;
-    border:1px solid #591526
+    color: white;
+    border: 1px solid #591526
 }
-.ParticipantsFilter{
-    padding:13px 0;
+
+.ParticipantsFilter {
+    padding: 13px 0;
     box-shadow: 0 1px 0 rgba(208, 208, 208, .5)
 }
+
 .ParticipantsPills {
-    border:0;
+    border: 0;
 }
+
 @media(max-width:767px) {
     body {
         font-size: 14px

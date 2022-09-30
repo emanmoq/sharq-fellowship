@@ -19,9 +19,14 @@
     <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
-    <link href="assets/css/jquery-ui-1.9.2.custom.css" rel="stylesheet">
     <link href="assets/lib/rating/css/star-rating-svg.css" rel="stylesheet">
     <link href="assets/css/selectric.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui-1.9.2.custom.css" rel="stylesheet">
+    <link href="assets/css/jquery-ui.css" rel="stylesheet">
+
+    <link href="assets/css/selectric.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css" />
 
     <link href="assets/css/style.css" rel="stylesheet">
 
@@ -357,274 +362,455 @@
         </div>
         </div>
     </header>
-    <section class="coursesHeader">
+    <section class="myProfileHeader">
         <div class="container">
             <div class="row ">
-                <div class="col-md-8">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item "><a href="#">Diploma Program</a> </li>
-                            <li class="breadcrumb-item active" aria-current="page">Foundational & Core Personal
-                                Development</li>
-                        </ol>
-                    </nav>
+                <div class="col-md-10">
+                    <div class="myProfileHeaderCont">
+                        <div class="profileImgCont">
+                            <label for="uploadProfImg">
+                                <a href="#" class="MyProfIcon">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="19.807" height="19.5"
+                                            viewBox="0 0 19.807 19.5">
+                                            <g id="Image_2" data-name="Image 2" transform="translate(0.75 0.75)">
+                                                <path id="Stroke_1" data-name="Stroke 1"
+                                                    d="M13.217,0H4.783C1.842,0,0,2.081,0,5.026v7.947C0,15.919,1.834,18,4.783,18h8.434C16.166,18,18,15.919,18,12.974V5.026C18,2.081,16.166,0,13.217,0Z"
+                                                    fill="none" stroke="#761c33" stroke-linecap="round"
+                                                    stroke-linejoin="round" stroke-miterlimit="10" stroke-width="1.5" />
+                                                <path id="Stroke_3" data-name="Stroke 3"
+                                                    d="M3.6,1.8A1.8,1.8,0,1,1,1.8,0,1.8,1.8,0,0,1,3.6,1.8Z"
+                                                    transform="translate(4.156 4.085)" fill="none" stroke="#761c33"
+                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-miterlimit="10" stroke-width="1.5" />
+                                                <path id="Stroke_5" data-name="Stroke 5"
+                                                    d="M17.025,2.856A22.244,22.244,0,0,0,14.1.327a2.287,2.287,0,0,0-3.083.743c-.746.966-1.212,2.266-2.339,2.876C7.291,4.7,6.476,3.486,5.318,3c-1.292-.541-2.273.432-3.028,1.367S.768,6.23,0,7.157"
+                                                    transform="translate(0.975 9.042)" fill="none" stroke="#761c33"
+                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-miterlimit="10" stroke-width="1.5" />
+                                            </g>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <input type="file" id="uploadProfImg" onchange="readURL(this)">
+                            </label>
+                            <script>
+                                function readURL(input) {
+                                    var $input = input;
+                                    if (input.files && input.files[0]) {
+                                        var reader = new FileReader();
+                                        reader.onload = function (e) {
+                                            $($input).parent().parent().find(".myProfileImg img")
+                                                .attr('src', e.target.result)
 
-                </div>
-                <div class="col-md-12">
-                    <h5>Foundational & Core Personal Development
-                    </h5>
-                    <div class="progress headerProgressBar">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0"
-                            aria-valuemax="100" style="width:45%">
-                            <span class="sr-only">70% Complete</span>
+
+                                        };
+                                        reader.readAsDataURL(input.files[0]);
+                                    }
+                                }
+                            </script>
+
+                            <div class="myProfileImg">
+                                <img src="assets/images/profile.png" alt="">
+                            </div>
                         </div>
+                        <div class="ProfNameDetails">
+                            <h4>Karam Hamed</h4>
+                            <p>Learn Social Sciences and Middle East politics from experts and distinguished
+                                instructors. Learn Social Sciences and Middle East politics from experts and
+                                distinguished instructors.</p>
+
+                        </div>
+
+
                     </div>
-                    <ul class="DiplomaListDetails">
-                        <li>
-                            7 Courses
-                        </li>
-                        <li>
-                            8 Chapters
-                        </li>
-                        <li>
-                            45 Videos
-                        </li>
-                        <li>
-                            12h 28m
-                        </li>
-                    </ul>
-                    <a href="#" class="btn commonBtn headerDiplomaBtn"><span>Resume Path</span></a>
-
                 </div>
-
-
             </div>
         </div>
-
+        </div>
     </section>
-    <section class="diplomaProgram">
+    <section class="myCoursesPageSec">
+        <div class="coursesTabsSection ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <ul class="nav nav-pills coursepage-tabs" id="MycoursesTabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link  active Profile-tab" data-toggle="pill" href="#Profile" role="tab"
+                                    aria-controls="pills-Profile" aria-selected="true"> Profile
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  contactList-tab" data-toggle="pill" href="#contactList" role="tab"
+                                    aria-controls="pills-contactList" aria-selected="false">Contact Links
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  Account-tab" data-toggle="pill" href="#Account" role="tab"
+                                    aria-controls="pills-Account" aria-selected="false">Account
+                                    information</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  Personality-tab" data-toggle="pill" href="#Personality" role="tab"
+                                    aria-controls="pills-Personality" aria-selected="false">Personality</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  Role-tab" data-toggle="pill" href="#Role" role="tab"
+                                    aria-controls="pills-Roll" aria-selected="false">Role</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  ExamInfo-tab" data-toggle="pill" href="#ExamInfo" role="tab"
+                                    aria-controls="pills-ExamInfo" aria-selected="false">Exam Info</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="mycoursesTabContainer">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="sectionTitle">
-                        <h5>Paths Courses</h5>
-                    </div>
-                    <div class="diplomaProgramBox">
-                        <div class="diplomIconCont">
-                            <div class="diplomaIcon ">
-                                <img src="assets/images/diplomaIcon1.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="diplomaProgramDetails">
-                            <div class="diplomaProgramTitle">
-                                <h6>
-                                    <a href="#"> Foundational & Core Personal Development
-                                    </a>
-                                </h6>
-                                <span>Phase 1</span>
-                            </div>
-                            <p>is focused on building foundational comprehension of core subjects that defines
-                                understanding, conceptualization, and knowing, such as epistemology, history of
-                                ideas…</p>
-                            <ul class="DiplomaListDetails">
-                                <li>
-                                    7 Courses
-                                </li>
-                                <li>
-                                    8 Chapters
-                                </li>
-                                <li>
-                                    45 Videos
-                                </li>
-                                <li>
-                                    12h 28m
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="diplomaChart">
-                            <div class="success chart" data-percent="100"><span>100%</span></div>
-                            <h6>Completed</h6>
-                        </div>
-                    </div>
-                    <div class="diplomaProgramBox">
-                        <div class="diplomIconCont">
-                            <div class="diplomaIcon ">
-                                <img src="assets/images/diplomaIcon2.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="diplomaProgramDetails">
-                            <div class="diplomaProgramTitle">
-                                <h6>
-                                    <a href="#">
-                                        Community Leadership
-                                    </a>
-                                </h6>
-                                <span>Phase 4</span>
-                            </div>
-                            <p>is focused on building foundational comprehension of core subjects that defines
-                                understanding, conceptualization, and knowing, such as epistemology, history of
-                                ideas…</p>
-                            <ul class="DiplomaListDetails">
-                                <li>
-                                    7 Courses
-                                </li>
-                                <li>
-                                    8 Chapters
-                                </li>
-                                <li>
-                                    45 Videos
-                                </li>
-                                <li>
-                                    12h 28m
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="diplomaChart">
-                            <div class="InProgress chart" data-percent="70"><span>70%</span></div>
-                            <h6>In Progress</h6>
-                        </div>
-                    </div>
-                    <div class="diplomaProgramBox">
-                        <div class="diplomIconCont">
-                            <div class="diplomaIcon ">
-                                <img src="assets/images/diplomaIcon3.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="diplomaProgramDetails">
-                            <div class="diplomaProgramTitle">
-                                <h6>
-                                    <a href="#">
-                                        Social impact & Applied Leadership+Applied Team Projects
-                                    </a>
-                                </h6>
-                                <span>Phase 5</span>
-                            </div>
-                            <p>is focused on building foundational comprehension of core subjects that defines
-                                understanding, conceptualization, and knowing, such as epistemology, history of
-                                ideas…</p>
-                            <ul class="DiplomaListDetails">
-                                <li>
-                                    7 Courses
-                                </li>
-                                <li>
-                                    8 Chapters
-                                </li>
-                                <li>
-                                    45 Videos
-                                </li>
-                                <li>
-                                    12h 28m
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="diplomaChart">
+                    <div class="tab-content" id="MycoursesTabContent">
+                        <div class="tab-pane show active fade " id="Profile" role="tabpanel"
+                            aria-labelledby="Profile-tab">
+                            <form action="" class="SuggestCourseForm MyProfInfoForm stepsForm">
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="">First Name</label>
+                                        <input type="text" class="form-control" placeholder="Karam">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="">Last Name</label>
+                                        <input type="text" class="form-control" placeholder="Hamed Khaled">
+                                    </div>
+                                    <div class="form-group  col-md-6 countriesFlagGroup">
+                                        <label for="">Phone number</label>
+                                        <input name="phone" class="form-control" type="text" id="phone"
+                                            placeholder="059000" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="">Country</label>
+                                        <select name="" id="" class="select">
+                                            <option value="">Palestine</option>
+                                            <option value="">Egypt</option>
+                                            <option value="">Jordan</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="">Date of Birth</label>
+                                        <div id="container"></div>
+                                        <input type="text" class="datepicker form-control"
+                                            placeholder="October 9, 2021">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>languge</label>
+                                        <div class="chooselangCont">
+                                            <label for="lang1" class="langCheckCont">
+                                                <input type="checkbox" checked class="langCheckBoxInput" id="lang1">
+                                                <div class="langCheckBox"> <span>English</span></div>
+                                            </label>
+                                            <label for="lang2" class="langCheckCont">
+                                                <input type="checkbox" class="langCheckBoxInput" id="lang2">
+                                                <div class="langCheckBox"> <span>France</span></div>
+                                            </label>
+                                            <label for="lang3" class="langCheckCont">
+                                                <input type="checkbox" class="langCheckBoxInput" id="lang3">
+                                                <div class="langCheckBox"> <span>Arabic</span></div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="">Biographical Info</label>
+                                        <textarea type="text" class="form-control"
+                                            placeholder="">Learn Social Sciences and Middle East politics from experts and distinguished instructors. Learn Social Sciences and Middle East politics from experts and distinguished instructors.                                    </textarea>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label>Interset</label>
+                                        <div class="ChooseIntrsestBox">
+                                            <label for="Interset1" class="langCheckCont">
+                                                <input type="checkbox" checked class="langCheckBoxInput" id="Interset1">
+                                                <div class="langCheckBox"> <span>Political Science</span></div>
+                                            </label>
+                                            <label for="Interset2" class="langCheckCont">
+                                                <input type="checkbox" class="langCheckBoxInput" id="Interset2">
+                                                <div class="langCheckBox"> <span>Countries Economy</span></div>
+                                            </label>
+                                            <label for="Interset3" class="langCheckCont">
+                                                <input type="checkbox" class="langCheckBoxInput" id="Interset3">
+                                                <div class="langCheckBox"> <span>world Trade</span></div>
+                                            </label>
+                                            <label for="Interset4" class="langCheckCont">
+                                                <input type="checkbox" class="langCheckBoxInput" id="Interset4">
+                                                <div class="langCheckBox"> <span>Leadership</span></div>
+                                            </label>
+                                        </div>
 
-                        </div>
-                    </div>
-                    <div class="diplomaProgramBox">
-                        <div class="diplomIconCont">
-                            <div class="diplomaIcon ">
-                                <img src="assets/images/diplomaIcon3.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="diplomaProgramDetails">
-                            <div class="diplomaProgramTitle">
-                                <h6>
-                                    <a href="#">
-                                        Social impact & Applied Leadership+Applied Team Projects
-                                    </a>
-                                </h6>
-                                <span>Phase 5</span>
-                            </div>
-                            <p>is focused on building foundational comprehension of core subjects that defines
-                                understanding, conceptualization, and knowing, such as epistemology, history of
-                                ideas…</p>
-                            <ul class="DiplomaListDetails">
-                                <li>
-                                    7 Courses
-                                </li>
-                                <li>
-                                    8 Chapters
-                                </li>
-                                <li>
-                                    45 Videos
-                                </li>
-                                <li>
-                                    12h 28m
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="diplomaChart">
-
-                        </div>
-                    </div>
-                    <div class="diplomaProgramBox">
-                        <div class="diplomIconCont">
-                            <div class="diplomaIcon ">
-                                <img src="assets/images/diplomaIcon3.svg" alt="">
-                            </div>
-                        </div>
-                        <div class="diplomaProgramDetails">
-                            <div class="diplomaProgramTitle">
-                                <h6>
-                                    <a href="#">
-                                        Social impact & Applied Leadership+Applied Team Projects
-                                    </a>
-                                </h6>
-                                <span>Phase 5</span>
-                            </div>
-                            <p>is focused on building foundational comprehension of core subjects that defines
-                                understanding, conceptualization, and knowing, such as epistemology, history of
-                                ideas…</p>
-                            <ul class="DiplomaListDetails">
-                                <li>
-                                    7 Courses
-                                </li>
-                                <li>
-                                    8 Chapters
-                                </li>
-                                <li>
-                                    45 Videos
-                                </li>
-                                <li>
-                                    12h 28m
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="diplomaChart text-center">
-                            <div class="lockedCourse">
-                                <div class="lockedCourseImg">
-                                    <i class="fas fa-lock"></i>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="">Work</label>
+                                        <input type="text" class="form-control" placeholder="Designer">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="">Study</label>
+                                        <input type="text" class="form-control" placeholder="Designer">
+                                    </div>
                                 </div>
-                              
-                            </div>
-                            <h6>Locked</h6>
+
+                                <div class="col-md-12"><button class="btn sendSuggestBtn"><span>Save</span></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane  fade " id="contactList" role="tabpanel" aria-labelledby="contactList-tab">
+
+                            <form action="" class="SuggestCourseForm MyProfInfoForm stepsForm">
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="">Slack</label>
+                                        <input type="text" class="form-control" placeholder="www.name.com">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="">Instagram</label>
+                                        <input type="text" class="form-control" placeholder="www.name.com">
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label for="">FaceBook</label>
+                                        <input type="text" class="form-control" placeholder="www.name.com">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="">LinkedIn</label>
+                                        <input type="text" class="form-control" placeholder="www.name.com">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="">Twitter</label>
+                                        <input type="text" class="form-control" placeholder="www.name.com">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12"><button class="btn sendSuggestBtn"><span>Save</span></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane  fade " id="Account" role="tabpanel" aria-labelledby="Account-tab">
+                            <form action="" class="SuggestCourseForm MyProfInfoForm stepsForm">
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="">Email</label>
+                                        <input type="password" class="form-control"
+                                            placeholder="Omaralfayoomi@gmail.com">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group ">
+                                            <label for="">Old Password</label>
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="">New Password</label>
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label for="">Confirm Password</label>
+                                            <input type="password" class="form-control" placeholder="Password">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12"><button class="btn sendSuggestBtn"><span>Save</span></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane  fade " id="Personality" role="tabpanel" aria-labelledby="Personality-tab">
+                            <form action="" class="SuggestCourseForm MyProfInfoForm stepsForm">
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <div class="slidecontainer clearfix">
+                                            <label for="">Introvert</label>
+                                            <span>
+                                                Extrovert
+                                            </span>
+                                            <div class="slider-range"></div>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <div class="slidecontainer clearfix">
+                                            <label for="">Intuition</label>
+                                            <span>
+                                                Intuition
+                                            </span>
+                                            <div class="slider-range"></div>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <div class="slidecontainer clearfix">
+                                            <label for="">Thinking</label>
+                                            <span>
+                                                Feeling
+                                            </span>
+                                            <div class="slider-range"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <div class="slidecontainer clearfix">
+                                            <label for="">Sensing</label>
+                                            <span>
+                                                Intuition
+                                            </span>
+                                            <div class="slider-range-min"></div>
+
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="col-md-12"><button class="btn sendSuggestBtn"><span>Save</span></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane  fade " id="Role" role="tabpanel" aria-labelledby="Role-tab">
+                            <form action="" class="SuggestCourseForm MyProfInfoForm stepsForm">
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <div class="slidecontainer clearfix">
+                                            <label for="">Maker</label>
+                                            <span>
+                                                <input type="text" class="amount" readonly
+                                                    style="border:0; color:; font-weight:500;">
+                                            </span>
+                                            <div class="slider-range-min"></div>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <div class="slidecontainer clearfix">
+                                            <label for="">Finisher</label>
+                                            <span>
+                                                <input type="text" class="amount" readonly
+                                                    style="border:0; color:; font-weight:500;">
+                                            </span>
+                                            <div class="slider-range-min"></div>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <div class="slidecontainer clearfix">
+                                            <label for="">Connector</label>
+                                            <span>
+                                                <input type="text" class="amount" readonly
+                                                    style="border:0; color:; font-weight:500;">
+                                            </span>
+                                            <div class="slider-range-min"></div>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <div class="slidecontainer clearfix">
+                                            <label for="">Evaluator</label>
+                                            <span>
+                                                <input type="text" class="amount" readonly
+                                                    style="border:0; color:; font-weight:500;">
+                                            </span>
+                                            <div class="slider-range-min"></div>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <div class="slidecontainer clearfix">
+                                            <label for="">Idea Generator</label>
+                                            <span>
+                                                <input type="text" class="amount" readonly
+                                                    style="border:0; color:; font-weight:500;">
+                                            </span>
+                                            <div class="slider-range-min"></div>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <div class="slidecontainer clearfix">
+                                            <label for="">Organiser</label>
+                                            <span>
+                                                <input type="text" class="amount" readonly
+                                                    style="border:0; color:; font-weight:500;">
+                                            </span>
+                                            <div class="slider-range-min"></div>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <div class="slidecontainer clearfix">
+                                            <label for="">Callbrator</label>
+                                            <span>
+                                                <input type="text" class="amount" readonly
+                                                    style="border:0; color:; font-weight:500;">
+                                            </span>
+                                            <div class="slider-range-min"></div>
+
+                                        </div>
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <div class="slidecontainer clearfix">
+                                            <label for="">Moderator</label>
+                                            <span>
+                                                <input type="text" class="amount" readonly
+                                                    style="border:0; color:; font-weight:500;">
+                                            </span>
+                                            <div class="slider-range-min"></div>
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="col-md-12"><button class="btn sendSuggestBtn"><span>Save</span></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="tab-pane  fade " id="ExamInfo" role="tabpanel" aria-labelledby="ExamInfo-tab">
+                            <form action="" class="SuggestCourseForm MyProfInfoForm stepsForm">
+                                <div class="row">
+                                    <div class="form-group col-md-6">
+                                        <label for="">الاسم الأول</label>
+                                        <input type="text" class="form-control" placeholder="كرم">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="">الاسم الاخير </label>
+                                        <input type="text" class="form-control" placeholder="كرم">
+                                    </div>
+
+
+                                    <div class="form-group col-md-6">
+                                        <label for="">الدراسة</label>
+                                        <input type="text" class="form-control" placeholder="تصميم">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="">العمل</label>
+                                        <input type="text" class="form-control" placeholder="تصميم">
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for=""> الوصف</label>
+                                        <textarea type="text" class="form-control"
+                                            placeholder="">Learn Social Sciences and Middle East politics from experts and distinguished instructors. Learn Social Sciences and Middle East politics from experts and distinguished instructors.                                    </textarea>
+                                    </div>
+                                    <div class="col-md-12"><button class="btn sendSuggestBtn"><span>Save</span></button>
+                                    </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
 
-                <nav aria-label="Page navigation" class="coursesPagination diplomaProgramPagination">
-                    <ul class="pagination justify-content-left">
-                        <li class="page-item">
-                            <a class="page-link" href="#" tabindex="-1">Next</a>
-                        </li>
-                        <li class="page-item "><a class="page-link" href="#">01</a></li>
-                        <li class="page-item"><a class="page-link" href="#">02</a></li>
-                        <li class="page-item active"><a class="page-link" href="#">03</a></li>
-                        <li class="page-item"><a class="page-link" href="#">04</a></li>
-                        <li class="page-item"><a class="page-link" href="#">05</a></li>
-                        <li class="page-item"><a class="page-link" href="#">06</a></li>
-                        <li class="page-item"><a class="page-link" href="#">.</a></li>
-                        <li class="page-item"><a class="page-link" href="#">.</a></li>
-                        <li class="page-item"><a class="page-link" href="#">15</a></li>
-
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#">Prev</a>
-                        </li>
-                    </ul>
-                    <span class="Showing">Showing <span>1-9 </span> of <span>11 </span> result</span>
-                </nav>
             </div>
         </div>
     </section>
@@ -647,7 +833,22 @@
                             <div class="appBtn"> <a href="#"><img src="assets/images/google.png" alt=""></a></div>
 
                         </div>
-
+                        <div class="footerPartners clearfix">
+                            <a href="#"><span>
+                                    Item Of
+                                </span>
+                                <div class="footerPartnerImg">
+                                    <img src="assets/images/asic.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="#"><span>
+                                    Accredit from
+                                </span>
+                                <div class="footerPartnerImg">
+                                    <img src="assets/images/aaa.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-2 col-4">
@@ -656,15 +857,23 @@
                     </div>
                     <ul class="footerList">
                         <li>
-                            <a href="#">Home
+                            <a href="#">Sign Up
                             </a>
                         </li>
                         <li>
-                            <a href="#"> Diploma Program
+                            <a href="#">About
                             </a>
                         </li>
                         <li>
-                            <a href="#">Participants
+                            <a href="#">Courses
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Specializations
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Diploma
                             </a>
                         </li>
                         <li>
@@ -672,15 +881,15 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#"> Schedule
+                            <a href="#">Help Center
+
                             </a>
                         </li>
                         <li>
                             <a href="#">Instructors
+
                             </a>
                         </li>
-
-
                     </ul>
                 </div>
                 <div class="col-md-2 col-4">
@@ -698,10 +907,6 @@
                         </li>
                         <li>
                             <a href="#"> Terms & Conditions
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#"> Privacy
                             </a>
                         </li>
                         <li>
@@ -815,6 +1020,7 @@
             </div>
         </div>
     </div>
+
     <script type="text/javascript" src="assets/js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -822,15 +1028,26 @@
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="assets/js/owl.carousel.js"></script>
     <script type="text/javascript" src="assets/lib/rating/jquery.star-rating-svg.js"></script>
+    <script src="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <script type="text/javascript" src="assets/js/jquery-ui-1.9.2.custom.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-ui.js"></script>
+
     <script type="text/javascript" src="assets/js/jquery.selectric.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
+
     <script type="text/javascript" src="assets/js/main.js"></script>
+
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <script src="assets/js/waypoints-min.js"></script>
     <script type="text/javascript" src="assets/js/counter.js"></script>
-
-
+    <script>
+        var input = document.querySelector("#phone");
+        window.intlTelInput(input, {
+            separateDialCode: true,
+            excludeCountries: ["in", "il"],
+            preferredCountries: ["SA", "jp", "pk", "no"]
+        });
+    </script>
 
 </body>
 
