@@ -7694,13 +7694,18 @@ article a {
     height: 31px;
     margin-left: auto;
     margin-right: 10px;
-    margin-top:10px
+    margin-top:10px;
+    position: relative;
 }
 .fc .fc-daygrid-day-number{
     align-self: center;
 }
-.coloredCirecle{
-    background-color: #591526;
+.fc .fc-non-business{
+    background: white !important;
+}
+.coloredCircle{
+    background-color: #591526 !important;
+    color:white !important
 }
 .triangle-up {
     position: absolute;

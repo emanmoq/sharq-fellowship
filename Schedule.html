@@ -591,10 +591,11 @@
 
 
         document.addEventListener('DOMContentLoaded', function () {
+            
             var calendarEl = document.getElementById('calendar');
-
+            $(calendarEl).find(".fc-header-toolbar").addClass("coloredCircle")
             var calendar = new FullCalendar.Calendar(calendarEl, {
-
+               
                 headerToolbar: {
                     left: 'title,prev,next',
                     //  center: '',
@@ -614,6 +615,7 @@
                         start: '2022-09-06',
                         constraint: 'businessHours',
                         description: 'Toto lorem ipsum dolor sit incid idunt ut',
+                        
 
                     },
 
@@ -660,16 +662,13 @@
             </div>
         </div>
         <div class="EventDescription"><p> ${info.event.extendedProps.description} </p> </div></div>`);
-
                 }
-
             });
+
 
             calendar.render();
         });
-        if ($(".fc-scrollgrid-sync-inner").find("fc-daygrid-day-events")){
-            $(".fc-scrollgrid-sync-inner").find(".fc-daygrid-day-top").addClass("coloredCirecle")
-        }
+
 
     </script>
 
