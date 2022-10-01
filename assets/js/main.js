@@ -6,8 +6,6 @@ jQuery(function ($) {
     items: 1
 
   });
-
-
   $(".InstructorsSlider").owlCarousel({
     nav: true,
     loop: false,
@@ -95,11 +93,13 @@ jQuery(function ($) {
         opacity: 1
       }, 100);
 
+
     } else {
 
       $(".up").stop(true).animate({
         opacity: 0
       }, 250);
+
     }
 
 
@@ -226,6 +226,104 @@ jQuery(function ($) {
     max:100,
     min:1
   });
+});
+
+
+/**************FAQ Collapse */
+$('.accordion-panel').click(function () {
+ $(this).not(this).find('span:first').removeClass('lni-chevron-up').addClass('lni-chevron-down');
+ $(this).find('span:first').toggleClass('lni lni-chevron-up lni lni-chevron-down');
+})
+$(".CurriculumList li").click(function(){
+$(this).not(this).find('span:first').removeClass('lni-chevron-down').addClass('lni-chevron-up');
+$(this).find('span:first').toggleClass('lni lni-chevron-down lni lni-chevron-up');
+})
+$(".NoteCollapse .accordion-panel").click(function(){
+$(this).not(this).find('span:first').removeClass('lni-chevron-up').addClass('lni-chevron-down');
+$(this).find('span:first').toggleClass('lni lni-chevron-up lni lni-chevron-down');
+})
+$('.faqHeader').click(function () {
+$(this).parent().find('.faqbody').slideToggle(400);
+});
+$(".faqHeader").on("click", "a", function(e) { e.preventDefault() });
+
+$('.CurriculumList li').click(function () {
+ $(this).find('.innerCurriculumList').slideToggle(400);
+});
+$(".CurriculumList li").on("click", "a", function(e) { e.preventDefault() });
+$(".radioBtnContainer").on("click", "a", function(e) { e.preventDefault() });
+$(".NoteCollapse").on("click", "a", function(e) { e.preventDefault() });
+$(".issueCertificateBtn").click(function () {
+$(this).css("display","none");
+$(this).parent().find(".MyCoursesCertficateBtns").css("display","block");
+$(this).parent().parent().find(".MycourseCertificateImg").css("filter","blur(0)")
+});
+$(".readOnlyRating").starRating({
+  starSize: 16,
+  activeColor: '#FFD93F',
+  hoverColor: '#FFD93F',
+  ratedColor: '#FFD93F',
+  emptyColor: 'transparent',
+  starShape: 'straight',
+  strokeColor:'#FFD93F',
+  strokeWidth:9,
+  ratedColors: '#FFD93F',
+  useGradient: false,
+  readOnly: true,
+  callback: function (currentRating, $el) {
+    // make a server call here
+  }
+});
+$(".lectureReviewsReadOnly").starRating({
+  starSize: 16,
+  activeColor: '#FFD93F',
+  hoverColor: '#FFD93F',
+  ratedColor: '#FFD93F',
+  emptyColor: 'transparent',
+  starShape: 'straight',
+  strokeColor:'#FFD93F',
+  strokeWidth:9,
+  ratedColors: '#FFD93F',
+  useGradient: false,
+  readOnly: true,
+  callback: function (currentRating, $el) {
+    // make a server call here
+  }
+});
+$(".learnerReviewsReadOnly").starRating({
+  starSize: 16,
+  rtl: true,
+  activeColor: '#FFB13E',
+  hoverColor: '#FFB13E',
+  ratedColor: '#FFB13E',
+  emptyColor: 'transparent',
+  starShape: 'straight',
+  strokeColor:'#FFB13E',
+  strokeWidth:9,
+  ratedColors: '#FFD93F',
+  useGradient: false,
+  readOnly: true,
+  callback: function (currentRating, $el) {
+    // make a server call here
+  }
+});
+$(".leaveReviewRating").starRating({
+  starSize: 16,
+  activeColor: '#FFB13E',
+  hoverColor: '#FFB13E',
+  ratedColor: '#FFB13E',
+  emptyColor: 'transparent',
+  starShape: 'straight',
+  strokeColor:'#FFB13E',
+  strokeWidth:9,
+  ratedColors: '#FFD93F',
+  useGradient: false,
+  disableAfterRate:true,
+  useFullStars: true,
+
+  callback: function (currentRating, $el) {
+    // make a server call here
+  }
 });
 
 
