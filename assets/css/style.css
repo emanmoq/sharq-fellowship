@@ -374,13 +374,7 @@ button.close span {
     left: auto
 }
 
-.instructorPageBody .tab-pane {
-    display: none;
-}
 
-.instructorPageBody .tab-pane.show {
-    display: block;
-}
 
 .instructorDetailsPageHeader {
     height: 180px;
@@ -903,22 +897,24 @@ header .container-fluid {
 
 .chart {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 .chart span {
     position: absolute;
-    width: 100%;
     ;
     font-size: .90em;
     font-weight: bold;
     text-align: center;
-    line-height: 65px;
+    align-self: center;
     opacity: 1 !important;
 }
 
-.chart.success {
-    color: #31D894
+.chart.success  {
+    color: #31D894 !important
 }
+
 
 .chart.InProgress span {
     color: #FFCE21 !important
@@ -1086,7 +1082,13 @@ header .container-fluid {
     margin-bottom: 40px;
 
 }
-
+.nav-pills   .nav-item{
+    margin-bottom: 10px;
+    font-size: .7em;
+}
+.ParticipantsPills .nav-link{
+    margin-right: 5px;
+}
 .courseDetails-tabs .nav-pills .nav-link {
     padding: 12px 18px;
     font-size: .875em;
@@ -5211,7 +5213,7 @@ textarea {
 }
 
 #MycoursesTabs .nav-link {
-    font-size: .81em;
+    font-size: 13px;
     font-weight: 500;
 }
 
@@ -6475,7 +6477,7 @@ article a {
     align-self: center;
 }
 
-.ParticipantsPills.nav-tabs .nav-link.active {
+.ParticipantsPills.nav-pills .nav-link.active {
     background-color: #591526;
     color: white;
     border: 1px solid #591526
@@ -8019,7 +8021,9 @@ article a {
     .pagination {
         display: block;
     }
-
+    .diplomaProgramPagination{
+        display: block;
+    }
     .innerHeader {
         padding: 30px 0
     }
@@ -8129,8 +8133,8 @@ article a {
     }
 
     #MycoursesTabs .nav-link {
-        margin-right: 10px;
-        font-size: .75em;
+        margin-right: 7px;
+        font-size: .65em;
     }
 
     .myProfileImg {
@@ -8234,15 +8238,40 @@ article a {
     }
 
     .diplomaProgramBox {
-        padding: 20px;
+        padding: 8px;
         height: auto;
-        display: block;
+  
     }
 
     .diplomIconCont {
-        width: 65px;
-        height: 65px;
+        width: 45px;
+        height: 45px;
+        margin-right: 10px;
+        align-self: flex-start;
     }
+    .diplomIconCont img {
+        width: 80% ;
+       
+    }
+    .textContainer{
+        padding:20px
+    }
+    .diplomaProgramBox .diplomaChart{
+      
+        margin-left: 0;
+    }
+    .LessondownloadFileCont p{
+        max-width: 80%;
+    }
+    .chart{
+        width: 45px;
+    }
+ 
+    .chart canvas{
+        width: 45px !important;
+        height:45px !important;
+    }
+    
 }
 
 @media (min-width: 800px) {
