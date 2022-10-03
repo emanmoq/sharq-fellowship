@@ -1,4 +1,6 @@
 jQuery(function ($) {
+  $(".modal").modal("show")
+
   $(".heroSlider").owlCarousel({
     nav: false,
     loop: true,
@@ -327,7 +329,6 @@ jQuery(function ($) {
     }
 
   });
-
 
 });
 

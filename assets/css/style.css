@@ -8125,6 +8125,72 @@ display: flex
 .emoji-button img{
 width: 23px;
 }
+.modal-body {
+    position: relative;
+}
+.chatModal button.close{
+    position: absolute;
+    right:15px;
+    top:15px
+}
+.chatModal  .modal-dialog{
+    max-width: 450px;
+}
+.chatModal .modal-content{
+    padding: 0;
+}
+.modal-body .coursepage-tabs{
+    padding-top:25px;
+    padding-bottom: 15px;
+    box-shadow: 0 1px 0 rgba(208, 208, 208, .5) ;
+    padding-left:50px
+}
+.modal-body .coursepage-tabs .nav-item{
+    margin-bottom: 0;  
+}
+.modal-body .coursepage-tabs .nav-item .nav-link{
+    padding:0 20px
+}
+.chatPillsLis li{
+    display: flex;
+    margin-bottom: 20px;
+    margin-right: 16px;
+}
+.chatPillsLis li i{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right:10px;
+    align-self: auto;
+
+}
+#chatTabContent{
+    margin:25px;
+    max-height: 352px;
+    overflow-y: scroll;
+    scrollbar-width:none
+}
+#chatTabContent::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    width: 3px;
+}
+.chatPillsLis li span{
+    font-size:14px;
+    font-weight: 500;
+    align-self: center;
+}
+.chatContactDetails{
+display: inline-flex;
+
+}
+.modalChatIcon{
+display: inline-flex;
+margin-left:auto
+}
+.modalChatIcon img{
+    width: 23px;
+}
 @media(max-width:767px) {
     body {
         font-size: 14px
