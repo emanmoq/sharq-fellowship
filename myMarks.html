@@ -265,13 +265,26 @@
 
             </div>
         </div>
-
     </section>
-
     <section class="mycoursesTabContainer">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
+                    <div class="MarkHeader">
+                        <form action="" class="MarkForm clearfix">
+                            <div class="form-group">
+                                <select name="" id="" class="select">
+                                    <option value="">Diploma1</option>
+                                    <option value="">Diploma1</option>
+                                    <option value="">Diploma1</option>
+                                </select>
+                            </div>
+                            <div class="markReview ">
+                                <button class="btn sendSuggestBtn reviewBtn" data-toggle="modal"
+                                    data-target="#MarkModal"><span>Review</span></button>
+                            </div>
+                        </form>
+                    </div>
                     <table class="MyMarks table ">
                         <thead>
                             <tr>
@@ -530,6 +543,47 @@
             </div>
         </div>
     </div>
+    <div class="modal fade examResultModal MarkFormModal" id="MarkModal" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true"><i class="lni lni-close"></i></span>
+                </button>
+
+
+                <div class="modal-body">
+
+                    <form action="" class="MarkFormModal SuggestCourseForm MyProfInfoForm  clearfix">
+                        <h6>Review</h6>
+                        <div class="form-group">
+                            <label for="">Full Name</label>
+                            <input type="text" class="form-control" placeholder="Hamed khaled ">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Course</label>
+                            <select name="" id="" class="select">
+                                <option value="">Political Science</option>
+                                <option value="">Political Science1</option>
+                                <option value="">Political Science1</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Notes</label>
+                            <textarea class="form-control markNote">
+                        Write your notes
+                       </textarea>
+                        </div>
+                    </form>
+                    <div class="ExamBtns">
+                        <a href="#" class="commonBtn sumbitExamBtn"><span>Submit</span> </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="assets/js/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -539,26 +593,9 @@
     <script type="text/javascript" src="assets/js/jquery-ui-1.9.2.custom.js"></script>
     <script type="text/javascript" src="assets/lib/rating/jquery.star-rating-svg.js"></script>
     <script type="text/javascript" src="assets/js/jquery.selectric.min.js"></script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/jquery.easypiechart.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
-    <script>
-        $("#paymentModal").modal("show")
-    </script>
-    <script type="text/javascript" src="assets/lib/Mask/dist/jquery.mask.js"></script>
-    <script>
-
-        $('#cardNum').mask('0000 0000 0000 0000');
-        $('#CVCGroup').mask('000');
-
-        $('#Month').mask('00');
-        $('#Year').mask('0000');
-
-    </script>
-
-    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/waypoints-min.js"></script>
-    <script type="text/javascript" src="assets/js/counter.js"></script>
+    <script>$(".modal").modal("show")</script>
 
 </body>
 

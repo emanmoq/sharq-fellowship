@@ -176,13 +176,12 @@ jQuery(function ($) {
     })
   });
 
-  if ($(".select").length) {
+
     $('.select').selectric({
       disableOnMobile: false,
       nativeOnMobile: false
     }
     );
-  }
   $('.selectric .button').text('');
 
   $('.selectric .button').append('<i class="lni lni-chevron-down"></i>');

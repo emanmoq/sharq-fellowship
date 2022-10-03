@@ -373,44 +373,60 @@ button.close span {
     right: 0;
     left: auto
 }
-
-
-
 .instructorDetailsPageHeader {
     height: 180px;
+    background-color: rgba(118, 28, 51, .22);
+    padding:25px 0
 }
 
 .InstructorDetailsPage {
     padding-top: 35px;
     padding-bottom: 70px;
+    position: relative;
 }
 
 .InstuctorNameImg {
-    width: 170px;
-    height: 170px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
-    margin-top: -100px;
-    margin-bottom: 20px;
+float: left;
 }
 
 .InstructorNameDetails {
-    padding-bottom: 70px;
+    float: left;
+    margin-left: 20px;
+    width: 80%;
 }
-
-.InstructorNameDetails h5,
-.InstructorNameDetails h6 {
+.instructorDetailsTable{
+    border: 1px solid #E9E9E9;
+    border-radius: 16px;
+    width: 100%;
+    border-collapse: separate;
+    overflow: hidden;
+    border-spacing: 0;
+}
+.instructorDetailsTable td{
+font-size: 1em;
+font-weight: 600;
+border:1px solid #E9E9E9
+}
+.instructorDetailsTable td:last-child{
+    color:#591526
+}
+.table-striped tbody tr:nth-of-type(odd){
+    background-color: #F7F7F7;
+}
+.InstructorNameDetails h5{
     font-size: 1.125em;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
-.InstructorNameDetails h6 {
-    font-size: 1em
-}
+
 
 .InstructorNameDetails p {
-    font-size: .875em;
-    margin-bottom: 27px;
+    font-size: .85em;
+    font-weight: 500;
     opacity: .71;
 }
 
@@ -1237,7 +1253,7 @@ header .container-fluid {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    background-color: #EDEDED;
+    background-color: white;
     display: inline-flex;
     justify-content: center;
     margin-right: 7px;
@@ -3911,7 +3927,12 @@ element.style {}
     z-index: 999;
     background-color: #591526;
 }
-
+.instructorChat{
+    left:auto;
+    bottom: 30px;
+    right: 30px;
+    position: absolute
+}
 .chat i {
     align-self: center;
 }
@@ -6709,7 +6730,39 @@ article a {
     cursor: grab;
     cursor: -webkit-grab;
 }
-
+.MarkHeader .form-group{
+    width: 517px;
+    height: 56px;
+    float: left;
+}
+.MarkHeader{
+    margin-bottom: 15px;
+}
+.markReview{
+    float: right;
+}
+.markReview .reviewBtn{
+    width: 166px;
+}
+.MarkFormModal h6{
+    font-size: 1.1875em;
+    text-align: center;
+    margin-bottom: 38px;
+}
+.markNote{
+    width: 100%;
+    height: 100px;
+    border-radius: 28px;
+}
+.MarkFormModal {
+    text-align: left;
+}
+.examResultModal.MarkFormModal .modal-dialog{
+max-width: 538px;
+}
+.examResultModal.MarkFormModal .modal-content{
+    padding: 45px;
+}
 @media (max-width: 1199.98px) {
     .fc-unthemed .fc-toolbar {
         margin-bottom: 1.5rem;
@@ -7828,7 +7881,250 @@ article a {
 .EventDescription p {
     margin-left: 15px;
 }
+/*******************Chat page ************/
+.chatbreadcrumb{
+    margin-bottom: 20px;
+}
+ .chatbreadcrumb.breadcrumb .breadcrumb-item a,.breadcrumb .breadcrumb-item.active {
+    color:black;
+    font-size: .85em;
+ }
+ .breadcrumb-item+.breadcrumb-item::before{
+    color:black;
+    margin:0 10px
+ }
 
+
+.chatPageBody{
+    padding:50px 0;
+}
+.chatBox{
+    width:100%;
+    height: 590px;
+border-radius: 16px;
+overflow: hidden;
+border:1px solid #DBDBDB;
+flex-direction: row;
+align-content: flex-end;
+display: flex
+}
+.chatSide{
+    display: flex;
+    width: 70px;
+    border-right:1px solid #DBDBDB;
+    flex-direction: column;
+    height: 100%;;
+}
+.chatCorner{
+    border-bottom:1px solid #DBDBDB;
+    padding:9px;
+    height: 64px;
+}
+.chatCorner i{
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #F2F2F2;
+}
+.chatCorner i img{
+    width:22px;
+    align-self: center;
+}
+.chatMembers{
+    display: flex;
+    justify-content: center;
+    padding:12px 0
+}
+.chatMembers ul {
+    list-style-type: none;
+    margin-bottom: 15px;
+}
+.chatMembers li{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 17px;
+    
+}
+.NoImgMember{
+    border:1px solid #761C33;
+    padding:2px;
+    background-color: white;
+    
+}
+.NoImgMember a{
+    display: flex;
+    background-color: #761C33;
+    justify-content: center;
+    width: 100%;
+    height: 100%;;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.NoImgMember span{
+    color:white;
+    align-self: center;
+    font-size: 1.6875em;
+    font-weight: 500;
+}
+.chatDetails{
+  display: flex;
+  flex-direction: column;  
+  width:calc(100% - 70px);
+}
+.chatTitle{
+    background-color: #761C33;
+    color:white;
+    padding:22px;
+    height: 64px;
+    font-size: 1em;
+    font-weight: 500;
+}
+.chatBoxMessages{
+    display: flex;
+    padding:20px 30px;
+    height:450px;
+    border-bottom: 1px solid #DBDBDB;
+    overflow-y: scroll;
+    flex-direction: column;
+}
+.SenderMessageBox{
+    margin-bottom: 20px;
+    display: flex;
+    align-self: flex-start;
+}
+.chaterImg{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.chaterDetailsHeader h5{
+    font-size: .875em;
+    color:black;
+    display: inline-block;
+    margin-right:7px;   
+}
+.chaterDetailsHeader{
+    margin-bottom: 11px;
+}
+.chaterDetailsHeader span{
+    font-size: .85em;
+    color:#761C33;
+    font-weight: 600;
+}
+.chatMessage{
+    width: 350px;
+    background-color: #FBFBFB;
+    border-radius: 16px;
+    border:1px solid #E9F1F9;
+    font-size: .875em;
+    font-weight: 500;
+    color:black;
+    padding:21px
+}
+.chaterMessage{
+    align-self: flex-end;
+}
+.chaterMessageBox{
+    display: inline-flex;
+    background-color: #761C33;
+    font-size: 14px;
+    border-radius: 16px;
+    overflow: hidden;
+   color:white;
+   padding:20px 32px
+}
+.deleteChatMessage{
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    background-color: #EAEAEA;
+    display: inline-flex;
+    justify-content: center
+}
+.deleteChatMessage i {
+    align-self: center;
+
+}
+.deleteChatMessage i img{
+    width: 15px;
+}
+.replayChatForm .chatText{
+    width:100%;
+    border:0;
+    height: 100%;
+    display: inline-block;
+}
+.replayChatForm .chatText:focus{
+    box-shadow: 0;
+    outline: 0;
+}
+.replayChatForm input::placeholder{
+    font-size: 14px;
+    font-weight: 500;
+}
+.sendChatBtn{
+    width: auto;
+    height: auto;
+    border:0;
+ margin-left:20px;
+ position: absolute;
+ right:0;
+ top:0;
+ padding: 0;
+}
+.sendChatBtn i{
+    width: 22px;
+}
+.sendChatBtn i img{
+    width: 22px;
+}
+.replayChatBox{
+    height: 70px;
+    padding:23px 30px;
+}
+.replayChatForm{
+    position: relative;
+    height: 100%;;
+    align-self: center;
+}
+.inputAttach{
+    position: absolute;
+    margin-right: 20px;
+    right:90px;
+    top:0
+}
+.inputAttach img{
+    width: 21px;
+}
+ #inputFileChat{
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+.smileSec{
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+.emoji-wysiwyg-editor{
+    border: 0;
+    height: 100%;
+}
+.emoji-button{
+    position: absolute;
+    top:0;
+    right:50px
+}
+.emoji-button img{
+width: 23px;
+}
 @media(max-width:767px) {
     body {
         font-size: 14px
@@ -8257,7 +8553,6 @@ article a {
         padding:20px
     }
     .diplomaProgramBox .diplomaChart{
-      
         margin-left: 0;
     }
     .LessondownloadFileCont p{
