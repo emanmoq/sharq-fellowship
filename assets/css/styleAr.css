@@ -5,6 +5,8 @@ body {
     color: black;
     overflow-x: hidden;
     position: relative;
+    direction: rtl;
+    text-align: right;
 }
 
 header {
@@ -73,7 +75,7 @@ ul {
     margin-top: -62px;
     position: absolute;
     top: 0;
-    left: 34%;
+    right: 34%;
 }
 
 .loginBodySec {
@@ -90,13 +92,13 @@ ul {
     min-height: 100%;
     width: 50%;
     top: 0;
-    right: 0
+    left: 0
 }
 
 .loginPageBody {
     background-color: white;
     position: absolute;
-    left: 0;
+    right: 0;
     min-height: 100%;
     display: flex;
     justify-content: center;
@@ -111,7 +113,7 @@ ul {
 
 .loginTitle {
     margin-bottom: 30px;
-    text-align: left;
+    text-align: right;
 }
 
 .loginTitle h6 {
@@ -134,14 +136,14 @@ ul {
 .checkmarkCont.loginCheck {
     font-size: .875em;
     margin-top: 26px;
-    padding-left: 15px;
+    padding-right: 15px;
     font-weight: 500;
 }
 
 .loginCheck .checkmark {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -153,13 +155,13 @@ ul {
 /* Customize the label (the container) */
 .loginCheck {
     position: relative;
-    padding-left: 24px;
+    padding-right: 24px;
     cursor: pointer;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    float: left
+    float: right
 }
 
 /* Hide the browser's default checkbox */
@@ -190,7 +192,7 @@ ul {
 
 /* Style the checkmark/indicator */
 .loginCheck .checkmark:after {
-    left: 6px;
+    right: 6px;
     top: 2px;
     width: 6px;
     height: 10px;
@@ -219,7 +221,7 @@ ul {
 button.close {
     padding: 0;
     margin: 0;
-    float: left;
+    float: right;
     width: 30px;
     height: 30px;
     background-color: #F2F2F2;
@@ -292,7 +294,7 @@ button.close span {
 
 .showHidePass {
     position: absolute;
-    right: 17px;
+    left: 17px;
     top: 20px;
     font-size: 17px;
     color: #808080
@@ -361,17 +363,17 @@ button.close span {
 
 .signUpLintexe a {
     color: #591526;
-    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .forgetPassBody .loginBodySecImg {
-    right: auto;
-    left: 0;
+    left: auto;
+    right: 0;
 }
 
 .forgetPassBody .loginPageBody {
-    right: 0;
-    left: auto
+    left: 0;
+    right: auto
 }
 .instructorDetailsPageHeader {
     height: 180px;
@@ -389,12 +391,12 @@ button.close span {
     width: 130px;
     height: 130px;
     border-radius: 50%;
-float: left;
+float: right;
 }
 
 .InstructorNameDetails {
-    float: left;
-    margin-left: 20px;
+    float: right;
+    margin-right: 20px;
     width: 80%;
 }
 .instructorDetailsTable{
@@ -431,7 +433,7 @@ border:1px solid #E9E9E9
 }
 
 .badge {
-    margin-right: 10px;
+    margin-left: 10px;
     padding: 11px 15px;
     background-color: #E6E6E6;
     border-radius: 100px;
@@ -461,7 +463,7 @@ border:1px solid #E9E9E9
 }
 
 .instructorMoreDetailsList li span:last-child {
-    margin-left: auto;
+    margin-right: auto;
     display: inline-flex;
     flex-direction: row;
 }
@@ -471,7 +473,7 @@ border:1px solid #E9E9E9
     height: 30px;
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 7px;
+    margin-left: 7px;
     display: inline-block;
     border: 2px solid white;
     box-shadow: 0 4px 40px rgba(0, 0, 0, .1);
@@ -485,8 +487,8 @@ border:1px solid #E9E9E9
 
 /************************************************/
 header .container-fluid {
-    padding-left: 80px;
     padding-right: 80px;
+    padding-left: 80px;
     ;
 }
 
@@ -533,8 +535,8 @@ header .container-fluid {
     height: 39px;
     transition: all .5s;
     ;
-    margin-left: 20px;
-    margin-right: 8px;
+    margin-right: 20px;
+    margin-left: 8px;
     font-size: 0.75em;
     font-weight: 600;
     display: inline-flex;
@@ -561,7 +563,7 @@ header .container-fluid {
 }
 
 .langBtn i {
-    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .langBtn:hover select {
@@ -599,15 +601,15 @@ header .container-fluid {
 .selectric-items li {
     width: 100%;
     font-size: 1em;
-    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
     font-weight: 500 !important;
-    text-align: left;
+    text-align: right;
 }
 
 .selectric-items li:hover {
     background-color: white !important;
     color: #000;
-    border-left: 2px solid #591526
+    border-right: 2px solid #591526
 }
 
 .selectric-items li.selected {
@@ -628,11 +630,11 @@ header .container-fluid {
     margin-top: 0px;
     position: absolute;
     top: 2px;
-    right: -2px;
+    left: -2px;
 }
 
 .langBtn::after {
-    right: 15px;
+    left: 15px;
     top: 15px
 }
 
@@ -656,7 +658,7 @@ header .container-fluid {
 }
 
 .dropdown-menu .dropdown-item span {
-    float: left;
+    float: right;
     max-width: 80%;
     display: inline-flex;
 }
@@ -672,7 +674,7 @@ header .container-fluid {
     height: 100%;
     background-color: #761C33;
     ;
-    left: 0;
+    right: 0;
     top: 0;
     opacity: 0;
     transition: all .5s;
@@ -711,7 +713,7 @@ header .container-fluid {
 .heroSliderItem:before {
     position: absolute;
     content: "";
-    background-image: linear-gradient(to right, rgba(249, 245, 246, 1) 0%, rgba(255, 255, 255, 0) 70%);
+    background-image: linear-gradient(to left, rgba(249, 245, 246, 1) 0%, rgba(255, 255, 255, 0) 70%);
     opacity: .89;
     width: 100%;
     height: 100%;
@@ -743,7 +745,7 @@ header .container-fluid {
     height: 43px;
     background-color: #761C33;
     color: white;
-    margin-left: 0;
+    margin-right: 0;
     font-size: 0.9375em;
     font-weight: 600;
     border-radius: 21px;
@@ -809,7 +811,7 @@ header .container-fluid {
     width: 89px;
     height: 89px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-left: 20px;
     justify-content: center;
     background-color: #F4F7F8;
     align-self: center;
@@ -831,7 +833,7 @@ header .container-fluid {
     font-weight: 600;
     color: #000000;
     display: inline-block;
-    margin-right: 11px;
+    margin-left: 11px;
 }
 
 .diplomaProgramBox:hover .diplomaProgramTitle h6 a {
@@ -937,7 +939,7 @@ header .container-fluid {
 }
 
 .diplomaProgramBox .diplomaChart {
-    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -1058,7 +1060,7 @@ header .container-fluid {
 
 .joinSec .viewVideoBtn {
     margin-top: 20px;
-    margin-left: 0;
+    margin-right: 0;
 }
 
 .joinSec .viewVideoBtn:hover {
@@ -1104,7 +1106,7 @@ header .container-fluid {
     font-size: .7em;
 }
 .ParticipantsPills .nav-link{
-    margin-right: 5px;
+    margin-left: 5px;
 }
 .courseDetails-tabs .nav-pills .nav-link {
     padding: 12px 18px;
@@ -1113,7 +1115,7 @@ header .container-fluid {
     text-align: center;
     border-radius: 21.5px;
     border: 1px solid #E1E1E1;
-    margin-right: 10px;
+    margin-left: 10px;
     align-self: center;
 }
 
@@ -1152,7 +1154,7 @@ header .container-fluid {
 .flagIcon {
     position: absolute;
     top: -15px;
-    left: 44%;
+    right: 44%;
     width: 33px;
     height: 33px;
     overflow: hidden;
@@ -1179,7 +1181,7 @@ header .container-fluid {
 
 .owl-carousel .owl-nav {
     position: absolute;
-    right: 0;
+    left: 0;
     top: -65px;
 }
 
@@ -1190,12 +1192,12 @@ header .container-fluid {
     background-color: #F2F2F2 !important;
     color: #761C33 !important;
     position: absolute;
-    right: 0;
+    left: 0;
     border: 1px solid transparent
 }
 
 .owl-carousel .owl-nav button.owl-prev {
-    right: 40px;
+    left: 40px;
 }
 
 .owl-carousel .owl-nav button.disabled {
@@ -1257,7 +1259,7 @@ header .container-fluid {
     background-color: white;
     display: inline-flex;
     justify-content: center;
-    margin-right: 7px;
+    margin-left: 7px;
     transition: all .5s;
     ;
 }
@@ -1376,7 +1378,7 @@ header .container-fluid {
     margin: 0;
     display: inline-flex;
     align-self: center;
-    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .subscribeForm .form-group {
@@ -1414,7 +1416,7 @@ header .container-fluid {
     ;
     color: white !important;
     font-size: 0.6875em;
-    margin-right: 13px;
+    margin-left: 13px;
     font-weight: 500;
     ;
 
@@ -1449,7 +1451,7 @@ footer .container {
     display: block;
     position: fixed;
     bottom: 150px;
-    right: 155px;
+    left: 155px;
     text-decoration: none;
     text-align: center;
     z-index: 999;
@@ -1492,10 +1494,10 @@ footer .container {
 
 .appBtn {
     width: 100px;
-    margin-right: 6px;
+    margin-left: 6px;
     margin-bottom: 25px;
     ;
-    float: left
+    float: right
 }
 
 .footerPartnerImg {
@@ -1509,8 +1511,8 @@ footer .container {
 }
 
 .footerPartners a {
-    margin-right: 20px;
-    float: left;
+    margin-left: 20px;
+    float: right;
 }
 
 .footerPartners span {
@@ -1543,7 +1545,7 @@ footer .container {
 .footerList li a {
     color: #707172;
     font-size: 0.6875em;
-    margin-left: 15px;
+    margin-right: 15px;
     font-weight: 500;
 }
 
@@ -1578,13 +1580,13 @@ footer .container {
 .socialIcons li {
     list-style-type: none;
     display: inline-block;
-    margin-right: 20px;
+    margin-left: 20px;
     color: #9F9F9F;
     font-size: 1.125em;
 }
 
 .socialIcons li:last-child {
-    margin-right: 0;
+    margin-left: 0;
 }
 
 .socialIcons li a {
@@ -1601,7 +1603,7 @@ footer .container {
 
 .footerLogo {
     display: inline-block;
-    margin-right: 8px;
+    margin-left: 8px;
     width: 89px;
 }
 
@@ -1612,7 +1614,7 @@ footer .container {
 .footerMenuList li {
     list-style-type: none;
     display: inline-block;
-    margin-right: 30px;
+    margin-left: 30px;
     ;
     color: #707172;
     font-size: 0.68em;
@@ -1620,7 +1622,7 @@ footer .container {
 }
 
 .footerMenuList li:last-child {
-    margin-right: 0;
+    margin-left: 0;
 }
 
 .footerMenuList li a {
@@ -1636,16 +1638,16 @@ footer .container {
     padding: 9px 0
 }
 
-.right-side {
-    padding-left: 30px;
-    border-left: 1px solid white;
-    margin-left: 30px;
+.left-side {
+    padding-right: 30px;
+    border-right: 1px solid white;
+    margin-right: 30px;
 }
 
 .copyLogo {
     width: 92px;
     display: inline-flex;
-    margin-lefT: 30px;
+    margin-right: 30px;
 }
 
 .copy p {
@@ -1654,15 +1656,15 @@ footer .container {
     align-self: center;
 }
 
-.left-side,
-.right-side {
+.right-side,
+.left-side {
     display: inline-flex;
 }
 
 .langDropDown {
     position: absolute;
     top: 100%;
-    right: 0;
+    left: 0;
     z-index: 1000;
     display: none;
     min-width: 100px;
@@ -1670,7 +1672,7 @@ footer .container {
     margin: 0.125rem 0 0;
     font-size: 1rem;
     color: #212529;
-    text-align: left;
+    text-align: right;
     list-style: none;
     background-color: #fff;
     background-clip: padding-box;
@@ -1679,7 +1681,7 @@ footer .container {
 
 .langCont {
     position: relative;
-    float: left;
+    float: right;
 }
 
 .owl-carousel.nav-slider {
@@ -1708,7 +1710,7 @@ footer .container {
 .dategroup i {
     position: absolute;
     top: 25px;
-    right: 24px;
+    left: 24px;
     color: #6E6E6E;
     font-size: 12px;
 }
@@ -1724,7 +1726,7 @@ footer .container {
     position: absolute;
     top: 25px;
     z-index: 999;
-    right: 24px;
+    left: 24px;
     font-size: 11px;
 }
 
@@ -1790,8 +1792,8 @@ footer .container {
 }
 
 .notifySec {
-    float: left;
-    margin-left: 20px;
+    float: right;
+    margin-right: 20px;
     width: 25px
 }
 
@@ -1814,7 +1816,7 @@ footer .container {
     border-radius: 50%;
     justify-content: center;
     background-color: #F8403B;
-    right: -8px;
+    left: -8px;
     bottom: 4;
 }
 
@@ -1835,9 +1837,9 @@ footer .container {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    margin-left: 27px;
-    margin-right: 20px;
-    float: left;
+    margin-right: 27px;
+    margin-left: 20px;
+    float: right;
     position: relative;
 }
 
@@ -1853,14 +1855,14 @@ footer .container {
     font-family: lineicons;
     font-size: .7em;
     position: absolute;
-    right: -15px;
+    left: -15px;
     top: 11px;
 }
 
 .profileImg span {
     position: absolute;
     width: 22px;
-    right: -6px;
+    left: -6px;
     top: -6px;
 }
 
@@ -1879,8 +1881,8 @@ footer .container {
 
 .notifyDropDown {
     width: 346px;
-    left: auto;
-    right: -150px;
+    right: auto;
+    left: -150px;
     top: 40px;
 }
 
@@ -1896,12 +1898,12 @@ footer .container {
 .arrow-up {
     width: 0;
     height: 0;
-    border-left: 9px solid transparent;
-    border-right: 8px solid transparent;
+    border-right: 9px solid transparent;
+    border-left: 8px solid transparent;
     border-bottom: 13px solid white;
     position: absolute;
     top: -10px;
-    left: 52%;
+    right: 52%;
 }
 
 .notifyDropDown ul li,
@@ -1921,11 +1923,11 @@ footer .container {
     max-width: 204px;
     width: 204px;
     top: 49px;
-    left: 19px;
+    right: 19px;
 }
 
 .notifyDesc {
-    margin-left: 10px
+    margin-right: 10px
 }
 
 .notifyDesc p {
@@ -1949,7 +1951,7 @@ footer .container {
 }
 
 .singlenotifyLink i {
-    float: right;
+    float: left;
 }
 
 .singlenotifyLink:hover i {
@@ -1958,24 +1960,24 @@ footer .container {
 
 .notifyListIcon {
     width: 16px;
-    float: left;
+    float: right;
 }
 
 .notifyDesc {
-    float: left;
+    float: right;
 }
 
 .profContainer {
     position: relative;
-    float: left;
+    float: right;
 }
 
 .dropdown:after {
     content: '';
     top: 0;
-    right: 0;
-    bottom: 0;
     left: 0;
+    bottom: 0;
+    right: 0;
     transition: opacity .15s ease-in-out;
     opacity: 0;
     visibility: hidden;
@@ -2001,11 +2003,11 @@ footer .container {
 }
 
 .profileDropDown .arrow-up {
-    left: 10%
+    right: 10%
 }
 
 .profileInnerDropDown {
-    left: -205px;
+    right: -205px;
     top: -4px;
     width: 204px;
     padding-top: 0;
@@ -2036,7 +2038,7 @@ footer .container {
 .nav-item .dropdown-menu.submenu {
     width: 204px;
     top: -1px;
-    left: 100%;
+    right: 100%;
     margin: 0;
     border-radius: 0 6px 6px 6px;
 }
@@ -2047,7 +2049,7 @@ footer .container {
 }
 
 .dropdown-item i {
-    float: right;
+    float: left;
     width: 10px;
     ;
 }
@@ -2118,11 +2120,11 @@ footer .container {
 }
 
 .coursesPagination .page-item:first-child {
-    margin-right: 15px
+    margin-left: 15px
 }
 
 .coursesPagination .page-item:last-child {
-    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .coursesPagination .page-item.active .page-link,
@@ -2141,7 +2143,7 @@ footer .container {
     text-align: center;
     display: inline-flex;
     position: relative;
-    float: left;
+    float: right;
 
 }
 
@@ -2175,7 +2177,7 @@ footer .container {
 }
 
 .courseFilterDropDown {
-    margin-right: 10px
+    margin-left: 10px
 }
 
 .coursesPageSection .courseItemBox {
@@ -2230,7 +2232,7 @@ footer .container {
     width: 100%;
     height: 100%;
     top: 0;
-    left: 0;
+    right: 0;
     ;
 }
 
@@ -2246,7 +2248,7 @@ footer .container {
     font-size: 13px;
     color: #761C33;
     background-color: white;
-    margin-left: 10px;
+    margin-right: 10px;
     border-radius: 100px;
     font-weight: bold;
 }
@@ -2272,7 +2274,7 @@ footer .container {
     background-color: #761C33;
     opacity: .12;
     position: absolute;
-    left: 15px;
+    right: 15px;
 }
 
 .innerBenfits {
@@ -2313,7 +2315,7 @@ footer .container {
 }
 
 .certificateJoinSec .sectionTitle {
-    margin-left: 41px;
+    margin-right: 41px;
 }
 
 
@@ -2410,7 +2412,7 @@ footer .container {
 }
 
 .certificateDetImg {
-    right: 0;
+    left: 0;
     margin-top: -220px;
     width: 300px
 }
@@ -2432,7 +2434,7 @@ footer .container {
 }
 
 .Showing {
-    float: right;
+    float: left;
     font-size: .875em;
     color: #6E6E6E;
     font-weight: 500;
@@ -2445,11 +2447,11 @@ footer .container {
 
 .SuggestCourseForm .halfForm-group {
     width: 48.5%;
-    float: left;
+    float: right;
 }
 
 .SuggestCourseForm .marginFormGroup {
-    margin-right: 16px;
+    margin-left: 16px;
 }
 
 .SuggestCourseForm .form-group {
@@ -2462,7 +2464,7 @@ footer .container {
     border: 1px solid #E2E2E2;
     background-color: #FBFBFB;
     border-radius: 28px;
-    padding-left: 28px;
+    padding-right: 28px;
     padding-top: 10px
 }
 
@@ -2508,7 +2510,7 @@ footer .container {
 }
 
 .countriesFlagGroup .form-control {
-    padding-left: 70px
+    padding-right: 70px
 }
 
 .iti--allow-dropdown {
@@ -2591,13 +2593,13 @@ element.style {}
     color: #761C33;
     font-family: lineicons;
     font-size: .7em;
-    margin-right: 13px;
+    margin-left: 13px;
     margin-top: 5px
 }
 
 .coursesSetBox {
     width: 17.6%;
-    margin-right: 25px;
+    margin-left: 25px;
     border-radius: 16px;
     display: inline-block;
     border: 1px solid #E9E9E9;
@@ -2607,7 +2609,7 @@ element.style {}
 }
 
 .coursesSetBox:last-child {
-    margin-right: 0;
+    margin-left: 0;
 }
 
 .CoursesdetailsSec {
@@ -2735,7 +2737,7 @@ element.style {}
 
 .playvideoIcon {
     width: 14px;
-    margin-right: 10px;
+    margin-left: 10px;
     display: inline-block;
 }
 
@@ -2744,7 +2746,7 @@ element.style {}
     background-color: transparent;
     color: #761C33;
     border: 1px solid #761C33;
-    margin-left: 19px;
+    margin-right: 19px;
     height: 43px;
     font-size: .875em;
     font-weight: 600;
@@ -2765,19 +2767,19 @@ element.style {}
 
 .OurMessionBox {
     padding-top: 44px;
-    padding-left: 76px;
+    padding-right: 76px;
     padding-bottom: 40px;
 }
 
 .OurMissionIcon {
     width: 80px;
-    margin-right: 38px;
+    margin-left: 38px;
     ;
-    float: left
+    float: right
 }
 
 .OurMissionText {
-    float: left;
+    float: right;
     width: 80%
 }
 
@@ -2860,7 +2862,7 @@ element.style {}
 }
 
 .AccreditedIcon {
-    margin-right: 18px;
+    margin-left: 18px;
     display: inline-flex;
     align-self: center;
     width: 39px;
@@ -2917,7 +2919,7 @@ element.style {}
 }
 
 .faqContent h4 span {
-    float: right;
+    float: left;
 }
 
 .faqbody {
@@ -2958,7 +2960,7 @@ element.style {}
 }
 
 .helpfulBtn:first-child {
-    margin-right: 15px;
+    margin-left: 15px;
 }
 
 .helpfulAnswer {
@@ -3005,8 +3007,8 @@ element.style {}
 }
 
 #InstructorModal .instructorImg {
-    float: left;
-    margin-right: 24px;
+    float: right;
+    margin-left: 24px;
     margin-bottom: 0;
 }
 
@@ -3023,12 +3025,12 @@ element.style {}
     background-color: rgba(163, 33, 53, .49);
     opacity: 0;
     transition: all .5s;
-    left: 0;
+    right: 0;
     top: 0;
 }
 
 #InstructorModal .aboutCourseTitle {
-    text-align: left
+    text-align: right
 }
 
 .InstructorsSlider .InstructorItem:hover .instructorImg:before {
@@ -3042,13 +3044,13 @@ element.style {}
 }
 
 .instructorSlider .courseItemBox {
-    text-align: left;
+    text-align: right;
 }
 
 .ModalinstructorDesc {
-    float: left;
+    float: right;
     max-width: 50%;
-    text-align: left;
+    text-align: right;
 }
 
 .modalinstructorBox h4 {
@@ -3082,7 +3084,7 @@ element.style {}
     font-size: .81em;
     border: 1px solid #6E6E6E;
     height: 34px;
-    margin-right: 13px;
+    margin-left: 13px;
 }
 
 .courseFilterHeader .courseFilterDropDown:hover .coursefilterBtn {
@@ -3109,7 +3111,7 @@ element.style {}
     cursor: pointer;
     font-size: 13px;
     font-weight: 500;
-    padding-left: 23px;
+    padding-right: 23px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -3125,7 +3127,7 @@ element.style {}
 .checkmark {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     height: 15px;
     width: 15px;
     background-color: white;
@@ -3149,7 +3151,7 @@ element.style {}
 /* Style the indicator (dot/circle) */
 .radioBtnContainer .checkmark:after {
     top: 2px;
-    left: 2px;
+    right: 2px;
     width: 8.5px;
     height: 8.5px;
     border-radius: 50%;
@@ -3172,7 +3174,7 @@ element.style {}
     color: white;
     font-size: 13px;
     font-weight: 500;
-    margin-left: 11px;
+    margin-right: 11px;
     line-height: 27px;
 }
 
@@ -3193,7 +3195,7 @@ element.style {}
 
 .certificateDetailsHeader .readOnlyRating {
     display: inline-block;
-    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .takeCourseBtn {
@@ -3201,7 +3203,7 @@ element.style {}
     background-color: white;
     border: 1px solid white;
     color: #761C33;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .commonBtn {
@@ -3261,8 +3263,8 @@ element.style {}
     padding-top: 70px;
     padding-bottom: 70px;
     ;
-    padding-left: 50px;
-    padding-right: 35px;
+    padding-right: 50px;
+    padding-left: 35px;
 }
 
 .aboutCourseTitle {
@@ -3297,7 +3299,7 @@ element.style {}
 }
 
 .enrollBtn svg {
-    margin-left: 6px
+    margin-right: 6px
 }
 
 .lectureDetails {
@@ -3317,23 +3319,23 @@ element.style {}
 }
 
 #coursesTabContent .aboutCourse {
-    padding-left: 0;
+    padding-right: 0;
 }
 
 
 
 .lectureImg {
-    float: left;
+    float: right;
     width: 89px;
     height: 89px;
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 18px;
+    margin-left: 18px;
 }
 
 .lectureDesc {
     width: 80%;
-    float: left
+    float: right
 }
 
 .aboutCertificateSec {
@@ -3341,11 +3343,11 @@ element.style {}
 }
 
 #coursesTabContent .aboutCertificateSec {
-    padding-left: 0;
+    padding-right: 0;
 }
 
 #coursesTabContent .CertificateDetailsBox {
-    padding-left: 0
+    padding-right: 0
 }
 
 .aboutCertificateSec .aboutCourseTitle {
@@ -3360,7 +3362,7 @@ element.style {}
 }
 
 .CertificateDetailsBox .outcomesList {
-    float: left;
+    float: right;
     width: 45%;
 }
 
@@ -3370,8 +3372,8 @@ element.style {}
 
 .CertificateDetailsImg {
     width: 40%;
-    float: left;
-    margin-right: 28px;
+    float: right;
+    margin-left: 28px;
 }
 
 .CertificateDetailsBox {
@@ -3410,14 +3412,14 @@ element.style {}
 }
 
 .reviewNum {
-    float: left;
+    float: right;
     width: 48%;
 
 }
 
 .reviewsDet {
     width: 48%;
-    float: right
+    float: left
 }
 
 .reviewProg {
@@ -3428,11 +3430,11 @@ element.style {}
     font-size: 0.75em;
     font-weight: 500;
     color: #6E6E6E;
-    float: left;
+    float: right;
 }
 
 .reviewProg .progress {
-    float: left;
+    float: right;
     margin: 0 7px;
     width: 74%;
 }
@@ -3455,7 +3457,7 @@ element.style {}
     font-size: 2.5625em;
     font-weight: 500;
     display: inline-block;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .revNumm span {
@@ -3469,7 +3471,7 @@ element.style {}
 
 .ratingsNumber {
     font-size: 0.8125em;
-    margin-left: 10px;
+    margin-right: 10px;
     font-weight: 500;
     color: #6E6E6E;
 }
@@ -3486,8 +3488,8 @@ element.style {}
     height: 83px;
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 10px;
-    float: left;
+    margin-left: 10px;
+    float: right;
 }
 
 .reviewerDetails {
@@ -3505,13 +3507,13 @@ element.style {}
 }
 
 .reviewerName {
-    float: left;
+    float: right;
     width: 80%;
     align-self: center;
 }
 
 .reviewerDetails .ratingsNumber {
-    margin-right: 4px;
+    margin-left: 4px;
 }
 
 .learnerReviewRate {
@@ -3524,7 +3526,7 @@ element.style {}
 }
 
 .reviewHelpful span {
-    margin-right: 8.5px;
+    margin-left: 8.5px;
     ;
 }
 
@@ -3584,7 +3586,7 @@ element.style {}
     color: white;
     border: 1px solid #761C33;
     width: 154px;
-    float: right;
+    float: left;
     position: relative;
 }
 
@@ -3606,7 +3608,7 @@ element.style {}
 
 .commentDate {
     font-size: 0.75em;
-    float: right;
+    float: left;
 }
 
 .course-Details {
@@ -3655,7 +3657,7 @@ element.style {}
     border-radius: 50%;
     display: inline-flex;
     justify-content: center;
-    margin-right: 18px;
+    margin-left: 18px;
 }
 
 .pathesBoxIconCont i {
@@ -3664,7 +3666,7 @@ element.style {}
 
 .pathesBoxDetails {
     display: inline-block;
-    float: right;
+    float: left;
     width: 60%;
 }
 
@@ -3672,12 +3674,12 @@ element.style {}
     font-size: 0.625em;
     font-weight: 500;
     padding: 5px;
-    margin-right: 4px;
+    margin-left: 4px;
     margin-bottom: 5px;
 }
 
 .pathesBoxDetails .badge:last-child {
-    margin-right: 0;
+    margin-left: 0;
 
 }
 
@@ -3846,7 +3848,7 @@ element.style {}
     border: 1px solid #E2E2E2;
     justify-content: center;
     cursor: pointer;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 
 /* When the checkbox is checked, add a blue background */
@@ -3861,7 +3863,7 @@ element.style {}
 
 #ExamInfo {
     direction: rtl;
-    text-align: right;
+    text-align: left;
     position: relative;
 }
 
@@ -3870,9 +3872,9 @@ element.style {}
 }
 
 .slidecontainer span {
-    float: right;
+    float: left;
     width: 50px;
-    text-align: right;
+    text-align: left;
 }
 
 .slidecontainer {
@@ -3922,16 +3924,16 @@ element.style {}
     border-radius: 50%;
     justify-content: center;
     bottom: 25px;
-    left: 30px;
+    right: 30px;
     text-decoration: none;
     text-align: center;
     z-index: 999;
     background-color: #591526;
 }
 .instructorChat{
-    left:auto;
+    right:auto;
     bottom: 30px;
-    right: 30px;
+    left: 30px;
     position: absolute
 }
 .chat i {
@@ -3955,7 +3957,7 @@ element.style {}
 .navbar-expand-lg .navbar-nav.coursepage-tabs .nav-item .nav-link,
 .coursepage-tabs .nav-link {
     PADDING: 0;
-    margin-right: 24px;
+    margin-left: 24px;
     font-size: .81em;
     font-weight: 500;
     position: relative;
@@ -3969,7 +3971,7 @@ element.style {}
     transition: all .5s;
     background-color: #761C33;
     bottom: -14px;
-    left: 0;
+    right: 0;
 }
 
 .coursepage-tabs .nav-item.active .nav-link:before {
@@ -3977,7 +3979,7 @@ element.style {}
 }
 
 .coursepage-tabs .nav-item:last-child .nav-link {
-    margin-right: 0;
+    margin-left: 0;
 }
 
 .scrolableHeader {
@@ -3988,7 +3990,7 @@ element.style {}
     background-color: #761C33;
     display: none;
     top: 0;
-    left: 0;
+    right: 0;
     width: 100%;
     height: 59px;
     padding: 5px 0;
@@ -4000,7 +4002,7 @@ element.style {}
 
 .scrolableHeader .logo {
     width: 117px;
-    margin-right: 20px;
+    margin-left: 20px;
     align-self: center;
 
     display: inline-flex;
@@ -4057,14 +4059,14 @@ element.style {}
 .innerCurriculumList li {
     padding: 0;
     padding-top: 15px;
-    padding-left: 16px;
+    padding-right: 16px;
     position: relative;
     border: 0;
     font-size: 13px;
 }
 
 .innerCurriculumList li a i {
-    float: right;
+    float: left;
 }
 
 .innerCurriculumList {
@@ -4074,7 +4076,7 @@ element.style {}
 .innerCurriculumList li:before {
     content: "\ea55";
     position: absolute;
-    left: 0;
+    right: 0;
     font-family: lineicons;
     color: #761C33;
     display: none;
@@ -4091,7 +4093,7 @@ element.style {}
 }
 
 .CurriculumList li a span {
-    float: right
+    float: left
 }
 
 .AttachmentsBox,
@@ -4165,8 +4167,8 @@ element.style {}
 }
 
 .relatedCourseImg {
-    float: left;
-    margin-right: 15px;
+    float: right;
+    margin-left: 15px;
     border-radius: 16px;
     overflow: hidden;
     width: 120px;
@@ -4174,7 +4176,7 @@ element.style {}
 }
 
 .relatedCourseDesc {
-    float: left;
+    float: right;
     width: 50%;
 }
 
@@ -4192,9 +4194,9 @@ element.style {}
     animation-duration: .5s;
     position: fixed !important;
     transition: 1s all;
-    left: 0;
-    width: 100%;
     right: 0;
+    width: 100%;
+    left: 0;
     transition: all .5s;
     ;
     animation: sticky;
@@ -4209,7 +4211,7 @@ element.style {}
     width: 100%;
     height: 69px;
     z-index: 9999999999;
-    right: 0;
+    left: 0;
     transition: all .5s;
     ;
     animation: sticky;
@@ -4237,7 +4239,7 @@ element.style {}
     color: #6E6E6E;
     font-weight: 500;
     display: block;
-    margin-left: 24px
+    margin-right: 24px
 }
 
 .sideCurriclum {
@@ -4248,7 +4250,7 @@ element.style {}
     height: auto;
     border-radius: 0;
     overflow: auto;
-    float: left;
+    float: right;
     z-index: 99;
     padding-top: 28px;
     top: 0;
@@ -4256,9 +4258,9 @@ element.style {}
 
 .courseVideoAndDetails {
     width: 75%;
-    float: left;
+    float: right;
     position: relative;
-    left: 0;
+    right: 0;
 }
 
 .coursepage-tabs .nav-link.active:before {
@@ -4301,7 +4303,7 @@ element.style {}
     position: absolute;
     width: 100%;
     top: 0;
-    left: 0;
+    right: 0;
     padding: 11px 20px;
     background-color: transparent;
     z-index: 9999;
@@ -4316,7 +4318,7 @@ element.style {}
 }
 
 .videoTitle .diplomaChart {
-    float: left;
+    float: right;
 }
 
 .videoTitle .diplomaChart .chart span {
@@ -4339,7 +4341,7 @@ element.style {}
     width: 100%;
     position: absolute;
     width: 100%;
-    left: 0;
+    right: 0;
     bottom: 0;
     margin: 0;
 }
@@ -4347,14 +4349,14 @@ element.style {}
 /* Customize the label (the container) */
 .checkmarkCont {
     position: relative;
-    padding-right: 24px;
+    padding-left: 24px;
     cursor: pointer;
     font-size: 22px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    float: left
+    float: right
 }
 
 /* Hide the browser's default checkbox */
@@ -4370,7 +4372,7 @@ element.style {}
 .checkmarkCont .checkmark {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     height: 16px;
     width: 16px;
     background-color: transparent;
@@ -4406,7 +4408,7 @@ element.style {}
 
 /* Style the checkmark/indicator */
 .checkmarkCont .checkmark:after {
-    left: 5px;
+    right: 5px;
     top: 1px;
     width: 5px;
     height: 10px;
@@ -4418,7 +4420,7 @@ element.style {}
 }
 
 .sideCurriclum .innerCurriculumList {
-    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .sideCurriclum .CurriculumList li .innerCurriculumList li {
@@ -4427,7 +4429,7 @@ element.style {}
     margin-bottom: 12px;
     padding: 0;
     padding-top: 16px;
-    padding-left: 10;
+    padding-right: 10;
     ;
 
 }
@@ -4439,7 +4441,7 @@ element.style {}
     position: absolute;
     content: "";
     top: 0;
-    left: 0;
+    right: 0;
     display: none;
 }
 
@@ -4457,12 +4459,12 @@ element.style {}
 }
 
 .sideCurriclum .curriculumCon h4 {
-    padding-left: 16px
+    padding-right: 16px
 }
 
 .sideCurriclum .CurriculumList li {
-    padding-left: 16px;
     padding-right: 16px;
+    padding-left: 16px;
     ;
 }
 
@@ -4482,7 +4484,7 @@ element.style {}
     height: 187px;
     display: block;
     top: 69px;
-    left: 21%;
+    right: 21%;
     width: 100%;
     z-index: 999;
     position: fixed;
@@ -4492,7 +4494,7 @@ element.style {}
     width: 300px;
     display: inline-block;
     height: 100%;
-    float: left;
+    float: right;
 }
 
 .scrollVideo .videoTitle {
@@ -4500,7 +4502,7 @@ element.style {}
     padding: 20px;
     border: 0;
     width: 60%;
-    float: left;
+    float: right;
     top: auto;
 }
 
@@ -4513,8 +4515,8 @@ element.style {}
 
 .videoTitleDetails {
     align-self: center;
-    margin-left: 13px;
-    float: left;
+    margin-right: 13px;
+    float: right;
 }
 
 .scrollVideo.videoSec span {
@@ -4540,7 +4542,7 @@ textarea {
 
 .replay {
     padding-top: 16px;
-    padding-left: 20px;
+    padding-right: 20px;
     padding-bottom: 11px;
     ;
 }
@@ -4555,7 +4557,7 @@ textarea {
     width: 46px;
     height: 46px;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-left: 10px;
     overflow: hidden;
     display: inline-block;
 }
@@ -4587,7 +4589,7 @@ textarea {
     display: inline-block;
     font-size: .875em;
     color: #6E6E6E;
-    margin-right: 19px;
+    margin-left: 19px;
     font-weight: 500;
     padding: 6px;
     border-radius: 3px;
@@ -4598,11 +4600,11 @@ textarea {
 }
 
 .replyLikesAnswers span {
-    margin-left: 6px;
+    margin-right: 6px;
 }
 
 .likeIcon {
-    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .postAnswerBox {
@@ -4655,7 +4657,7 @@ textarea {
     padding: 6px;
     border-radius: 3px;
     display: inline-block;
-    margin-left: 10px;
+    margin-right: 10px;
     font-weight: 500;
     color: #6E6E6E;
     font-size: .81em;
@@ -4667,12 +4669,12 @@ textarea {
     font-weight: 500;
     color: #6E6E6E;
     ;
-    margin-right: 5px
+    margin-left: 5px
 }
 
 .EnterToSave {
-    float: right;
-    margin-right: 0;
+    float: left;
+    margin-left: 0;
 }
 
 .NoteBookNote {
@@ -4702,17 +4704,17 @@ textarea {
 }
 
 .NoteActionBtns {
-    float: right;
-    display: inline-block;
-}
-
-.NoteAction p {
     float: left;
     display: inline-block;
 }
 
+.NoteAction p {
+    float: right;
+    display: inline-block;
+}
+
 .NoteContent {
-    padding-left: 16px;
+    padding-right: 16px;
 }
 
 .NoteContent h6 {
@@ -4748,7 +4750,7 @@ textarea {
 }
 
 .NoteActionBtn:first-child {
-    margin-right: 10px;
+    margin-left: 10px;
     ;
 }
 
@@ -4773,11 +4775,11 @@ textarea {
 
 .AnswersBox label {
     padding: 18px 20px;
-    padding-left: 40px;
+    padding-right: 40px;
     border-bottom: 1px solid #DBDBDB;
     font-size: .875em;
     font-weight: 500;
-    left: auto;
+    right: auto;
     color: #6E6E6E;
 }
 
@@ -4787,8 +4789,8 @@ textarea {
 
 .AnswersBox .checkmark {
     top: 22px;
-    left: 16px;
-    margin-right: 6px;
+    right: 16px;
+    margin-left: 6px;
 }
 
 .examResultModal h4 {
@@ -4840,12 +4842,12 @@ textarea {
 }
 
 .faildDetails {
-    float: left;
-    margin-right: 33px
+    float: right;
+    margin-left: 33px
 }
 
 .faildDetails:last-child {
-    margin-right: 0;
+    margin-left: 0;
 }
 
 .FaildDetailscont {
@@ -4863,7 +4865,7 @@ textarea {
 }
 
 .retakeBtn {
-    margin-right: 14px;
+    margin-left: 14px;
     background-color: white;
     border: 1px solid #761C33;
     color: #761C33
@@ -4924,7 +4926,7 @@ textarea {
 .step-app>.step-content {
     border: 0;
     padding: 0;
-    text-align: left;
+    text-align: right;
 }
 
 .step-app>.step-steps {
@@ -4936,7 +4938,7 @@ textarea {
 
 .step-app>.step-steps>li {
     width: 124px;
-    margin-right: 10px;
+    margin-left: 10px;
     ;
     background-color: #E2E2E2;
     border-radius: 2px;
@@ -4946,7 +4948,7 @@ textarea {
 }
 
 .step-app>.step-steps>li:last-child {
-    margin-right: 0;
+    margin-left: 0;
 }
 
 .step-app>.step-steps>li.active,
@@ -5004,9 +5006,9 @@ textarea {
 
 .selectric .button {
     position: absolute;
-    margin-right: auto;
+    margin-left: auto;
     height: auto;
-    right: 36px;
+    left: 36px;
     top: 21px;
     padding: 0;
 }
@@ -5020,7 +5022,7 @@ textarea {
 
 .selectric .label {
     color: #6E6E6E;
-    text-align: left;
+    text-align: right;
     width: 100%;
     height: 100%;
     ;
@@ -5058,7 +5060,7 @@ textarea {
 }
 
 .stepsForm .dategroup:after {
-    right: 25px;
+    left: 25px;
     top: 21px;
 }
 
@@ -5109,7 +5111,7 @@ textarea {
 .confirmLabel {
     font-size: .875em;
     font-weight: 500;
-    padding-left: 22px
+    padding-right: 22px
 }
 
 .confirmLabel .checkmark {
@@ -5121,7 +5123,7 @@ textarea {
     color: #6E6E6E;
     font-family: lineicons;
     font-size: .7em;
-    margin-right: 13px;
+    margin-left: 13px;
     ;
 }
 
@@ -5145,7 +5147,7 @@ textarea {
     height: 119px;
     border-radius: 16px;
     overflow: hidden;
-    margin-right: 20px
+    margin-left: 20px
 }
 
 .myCourse-details {
@@ -5163,7 +5165,7 @@ textarea {
     height: 29px;
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 7px;
+    margin-left: 7px;
     ;
 }
 
@@ -5205,7 +5207,7 @@ textarea {
 }
 
 .mycourseOptions {
-    margin-left: auto
+    margin-right: auto
 }
 
 .processPercentage {
@@ -5309,7 +5311,7 @@ textarea {
     background-color: transparent;
     border-radius: 21px;
     height: 43px;
-    margin-right: 16px;
+    margin-left: 16px;
     ;
     color: rgba(0, 0, 0, .5);
     font-size: .875em;
@@ -5356,7 +5358,7 @@ textarea {
 .cobonCheckbox {
     font-size: .875em;
     font-weight: 500;
-    padding-left: 25px;
+    padding-right: 25px;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
@@ -5434,11 +5436,11 @@ textarea {
 .paymentForm .form-group.cardNumFormgroup {
     width: 260px;
     display: inline-block;
-    margin-right: 12px;
+    margin-left: 12px;
 }
 
 .paymentForm .form-group {
-    text-align: left;
+    text-align: right;
 }
 
 .paymentForm .form-group.CVCGroup {
@@ -5447,7 +5449,7 @@ textarea {
 }
 
 #paymentModal {
-    text-align: left;
+    text-align: right;
 }
 
 #paymentModal h5 {
@@ -5460,25 +5462,25 @@ textarea {
 
 .paymentForm {
     width: 100%;
-    text-align: left;
+    text-align: right;
 }
 
 .paymentForm label {
     font-size: .875em;
     font-weight: 500;
     display: block;
-    text-align: left;
+    text-align: right;
 }
 
 #dayFormgroup {
     width: 104px;
-    margin-right: 12px;
+    margin-left: 12px;
     display: inline-block;
 }
 
 #MonthFormgroup {
     width: 65px;
-    margin-right: 12px;
+    margin-left: 12px;
     display: inline-block;
 
 }
@@ -5521,7 +5523,7 @@ textarea {
     height: 137px;
     border-radius: 50%;
     overflow: hidden;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 .profileImgCont {
@@ -5531,7 +5533,7 @@ textarea {
 .MyProfIcon {
     display: flex;
     position: absolute;
-    right: 23px;
+    left: 23px;
     top: 0;
     width: 38px;
     height: 38px;
@@ -5563,14 +5565,14 @@ textarea {
 }
 
 .myRewards span {
-    float: left;
-    margin-right: 10px;
+    float: right;
+    margin-left: 10px;
     display: block;
     width: 30px;
 }
 
 .myRewards span:last-child {
-    margin-right: 0;
+    margin-left: 0;
 }
 
 .MyProfInfoForm label {
@@ -5592,7 +5594,7 @@ textarea {
 }
 
 .MyProfInfoForm .dategroup::after {
-    right: 25px;
+    left: 25px;
     top: 53px;
 }
 
@@ -5606,21 +5608,21 @@ textarea {
     list-style-type: none;
     padding-top: 28px;
     padding-bottom: 22px;
-    padding-left: 38px;
-    padding-right: 14px;
+    padding-right: 38px;
+    padding-left: 14px;
     border-bottom: 1px solid #E9E9E9;
 }
 
 .rewardsList li span {
     width: 66px;
-    margin-right: 19px;
-    float: left;
+    margin-left: 19px;
+    float: right;
 }
 
 .rewardsList li p {
     font-size: .875em;
     font-weight: 500;
-    float: left;
+    float: right;
     width: 68%;
 }
 
@@ -5638,7 +5640,7 @@ textarea {
     font-family: lineicons;
     font-size: .7em;
     position: absolute;
-    right: 24px;
+    left: 24px;
     top: 24px;
 }
 
@@ -5663,7 +5665,7 @@ textarea {
     font-weight: 500;
     color: #6E6E6E;
     display: block;
-    padding-left: 30px;
+    padding-right: 30px;
     float: none;
     margin-bottom: 20px;
 }
@@ -5900,7 +5902,7 @@ textarea {
 }
 
 .publicLinks {
-    float: right;
+    float: left;
 }
 
 .publicLinks .btn {
@@ -5908,7 +5910,7 @@ textarea {
     height: 29px;
     background-color: rgba(255, 255, 255, .15);
     border-radius: 0;
-    margin-left: 15px;
+    margin-right: 15px;
     color: white;
     font-size: .75em;
     font-weight: 600;
@@ -5983,7 +5985,7 @@ article a {
     background-color: white;
     border-radius: 17px;
     height: 34px;
-    padding-left: 40px;
+    padding-right: 40px;
 
 }
 
@@ -5993,7 +5995,7 @@ article a {
 
 .searchIcon {
     position: absolute;
-    left: 16px;
+    right: 16px;
     top: 38%;
 }
 
@@ -6033,7 +6035,7 @@ article a {
 }
 
 .articalLink:nth-child(even) {
-    margin-right: 25px;
+    margin-left: 25px;
 }
 
 .browseSection {
@@ -6172,7 +6174,7 @@ article a {
 }
 
 .chatIcon {
-    margin-right: 7px;
+    margin-left: 7px;
 }
 
 .chatBtn:hover {
@@ -6253,7 +6255,7 @@ article a {
     background-color: white;
     ;
     border-radius: 6px;
-    margin-right: 6px;
+    margin-left: 6px;
     justify-content: center;
 }
 
@@ -6313,7 +6315,7 @@ article a {
     height: 43px;
     border-radius: 50%;
     background-color: rgba(118, 28, 51, .23);
-    float: right;
+    float: left;
 }
 
 .uploadDetailsBtn:hover {
@@ -6422,7 +6424,7 @@ article a {
 }
 
 .calamansi-skin--calamansi-compact .clmns--controls .clmns--center>div,
-.clmns--right>div {
+.clmns--left>div {
     width: 34px;
     height: 34px;
     border-radius: 50% !important;
@@ -6451,7 +6453,7 @@ article a {
 }
 
 .calamansi-skin--calamansi-compact .clmns--custom-checkbox input {
-    left: 11px !important
+    right: 11px !important
 }
 
 .clmns--volume,
@@ -6478,7 +6480,7 @@ article a {
     font-size: .81em;
     border: 1px solid #6E6E6E;
     height: 34px;
-    margin-right: 13px;
+    margin-left: 13px;
     border: 0;
     border: 1px solid #761C33;
 
@@ -6488,7 +6490,7 @@ article a {
     font-size: .9em;
     border-radius: 25px;
     padding: 0;
-    margin-right: 15px;
+    margin-left: 15px;
     padding: 0px 15px;
     height: 34px;
     display: inline-flex;
@@ -6581,12 +6583,12 @@ article a {
     width: 10px;
     border-radius: 50%;
     top: 0.7rem;
-    left: 0.75rem;
+    right: 0.75rem;
 }
 
 .fc-unthemed .fc-event.fc-not-start.fc-end .fc-content,
 .fc-unthemed .fc-event-dot.fc-not-start.fc-end .fc-content {
-    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .fc-unthemed .fc-event .fc-time,
@@ -6624,8 +6626,8 @@ article a {
 
 .fc-unthemed .fc-popover .fc-header {
     padding: 0.75rem 1.25rem;
-    border-top-left-radius: 0.42rem;
     border-top-right-radius: 0.42rem;
+    border-top-left-radius: 0.42rem;
 }
 
 .fc-unthemed .fc-popover .fc-header .fc-close {
@@ -6646,13 +6648,13 @@ article a {
 }
 
 .fc-unthemed .fc-popover .fc-body .fc-event.fc-not-start.fc-not-end {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .fc-unthemed .fc-popover .fc-body .fc-event.fc-not-start.fc-end {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 .fc-unthemed .fc-toolbar {
@@ -6674,13 +6676,13 @@ article a {
 }
 
 .fc-unthemed .fc-toolbar .fc-button.fc-corner-left {
-    border-top-left-radius: 0.42rem;
-    border-bottom-left-radius: 0.42rem;
+    border-top-right-radius: 0.42rem;
+    border-bottom-right-radius: 0.42rem;
 }
 
 .fc-unthemed .fc-toolbar .fc-button.fc-corner-right {
-    border-top-right-radius: 0.42rem;
-    border-bottom-right-radius: 0.42rem;
+    border-top-left-radius: 0.42rem;
+    border-bottom-left-radius: 0.42rem;
 }
 
 .fc-unthemed .fc-toolbar .fc-button .fc-icon {
@@ -6706,7 +6708,7 @@ article a {
     content: "";
 }
 
-.fc-unthemed .fc-toolbar .fc-button .fc-icon.fc-icon-right-single-arrow {
+.fc-unthemed .fc-toolbar .fc-button .fc-icon.fc-icon-left-single-arrow {
     font-family: Ki;
     font-style: normal;
     font-weight: normal;
@@ -6734,13 +6736,13 @@ article a {
 .MarkHeader .form-group{
     width: 517px;
     height: 56px;
-    float: left;
+    float: right;
 }
 .MarkHeader{
     margin-bottom: 15px;
 }
 .markReview{
-    float: right;
+    float: left;
 }
 .markReview .reviewBtn{
     width: 166px;
@@ -6756,7 +6758,7 @@ article a {
     border-radius: 28px;
 }
 .MarkFormModal {
-    text-align: left;
+    text-align: right;
 }
 .examResultModal.MarkFormModal .modal-dialog{
 max-width: 538px;
@@ -6836,7 +6838,7 @@ max-width: 538px;
 
 .fc-unthemed .fc-event.fc-not-start.fc-not-end,
 .fc-unthemed .fc-event-dot.fc-not-start.fc-not-end {
-    border-left: 1px solid #F3F6F9;
+    border-right: 1px solid #F3F6F9;
 }
 
 .fc-unthemed .fc-event.fc-start .fc-content:before,
@@ -7667,7 +7669,7 @@ max-width: 538px;
     color: #591526;
     font-weight: bold;
     display: inline-block;
-    margin-right: 18px;
+    margin-left: 18px;
 
 }
 
@@ -7680,7 +7682,7 @@ max-width: 538px;
     border: 1px solid #F2F2F2;
     display: inline-flex;
     justify-content: center;
-    margin-right: 10px;
+    margin-left: 10px;
     margin-bottom: 10px;
 }
 
@@ -7727,7 +7729,7 @@ max-width: 538px;
 .fc .fc-daygrid-body-unbalanced .fc-daygrid-day-events{
     position: absolute;
     top:0;
-    left:0;
+    right:0;
     width: 100%;
     height: 100%;
 }
@@ -7748,8 +7750,8 @@ max-width: 538px;
     justify-content: center;
     width: 31px;
     height: 31px;
-    margin-left: auto;
-    margin-right: 10px;
+    margin-right: auto;
+    margin-left: 10px;
     margin-top:10px;
     position: relative;
 }
@@ -7768,19 +7770,19 @@ max-width: 538px;
     top: -14px;
     width: 0; 
     height: 0; 
-    border-left: 15px solid transparent;
     border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
     
     border-bottom: 15px solid #E9E9E9;
 }
 .inner-triangle {
     position: absolute;
     top: 2px;
-    left: -14px;
+    right: -14px;
     width: 0;
     height: 0;
-    border-left: 14px solid transparent;
     border-right: 14px solid transparent;
+    border-left: 14px solid transparent;
     
     border-bottom: 14px solid white;
 }
@@ -7789,8 +7791,8 @@ max-width: 538px;
     height: 30px;
     border-radius: 50%;
     display: inline-block;
-    margin-right: 9px;
-    float: left;
+    margin-left: 9px;
+    float: right;
 }
 
 .eventDescHeader {
@@ -7823,7 +7825,7 @@ max-width: 538px;
 }
 
 .eventLinks {
-    float: right
+    float: left
 }
 
 .eventLinks .eventEditLink {
@@ -7842,7 +7844,7 @@ max-width: 538px;
 }
 
 .leftEvent {
-    float: left;
+    float: right;
 }
 
 .eventDescName:before {
@@ -7876,11 +7878,11 @@ max-width: 538px;
     border-radius: 50%;
     ;
     background-color: #591526;
-    margin-right: 8px;
+    margin-left: 8px;
 }
 
 .EventDescription p {
-    margin-left: 15px;
+    margin-right: 15px;
 }
 /*******************Chat page ************/
 .chatbreadcrumb{
@@ -7912,7 +7914,7 @@ display: flex
 .chatSide{
     display: flex;
     width: 70px;
-    border-right:1px solid #DBDBDB;
+    border-left:1px solid #DBDBDB;
     flex-direction: column;
     height: 100%;;
 }
@@ -8005,13 +8007,13 @@ display: flex
     height: 30px;
     border-radius: 50%;;
     overflow: hidden;
-    margin-right: 10px;
+    margin-left: 10px;
 }
 .chaterDetailsHeader h5{
     font-size: .875em;
     color:black;
     display: inline-block;
-    margin-right:7px;   
+    margin-left:7px;   
 }
 .chaterDetailsHeader{
     margin-bottom: 11px;
@@ -8076,9 +8078,9 @@ display: flex
     width: auto;
     height: auto;
     border:0;
- margin-left:20px;
+ margin-right:20px;
  position: absolute;
- right:0;
+ left:0;
  top:0;
  padding: 0;
 }
@@ -8099,8 +8101,8 @@ display: flex
 }
 .inputAttach{
     position: absolute;
-    margin-right: 20px;
-    right:90px;
+    margin-left: 20px;
+    left:90px;
     top:0
 }
 .inputAttach img{
@@ -8115,7 +8117,7 @@ display: flex
 .smileSec{
     position: relative;
     display: inline-block;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 .emoji-wysiwyg-editor{
     border: 0;
@@ -8124,7 +8126,7 @@ display: flex
 .emoji-button{
     position: absolute;
     top:0;
-    right:50px
+    left:50px
 }
 .emoji-button img{
 width: 23px;
@@ -8134,7 +8136,7 @@ width: 23px;
 }
 .chatModal button.close{
     position: absolute;
-    right:15px;
+    left:15px;
     top:15px
 }
 .chatModal  .modal-dialog{
@@ -8147,7 +8149,7 @@ width: 23px;
     padding-top:25px;
     padding-bottom: 15px;
     box-shadow: 0 1px 0 rgba(208, 208, 208, .5) ;
-    padding-left:50px
+    padding-right:50px
 }
 .modal-body .coursepage-tabs .nav-item{
     margin-bottom: 0;  
@@ -8159,14 +8161,14 @@ width: 23px;
 .chatPillsLis li{
     display: flex;
     margin-bottom: 20px;
-    margin-right: 16px;
+    margin-left: 16px;
 }
 .chatPillsLis li i{
     width:40px;
     height: 40px;
     border-radius: 50%;
     overflow: hidden;
-    margin-right:10px;
+    margin-left:10px;
     align-self: auto;
 
 }
@@ -8202,7 +8204,7 @@ display: inline-flex;
 }
 .modalChatIcon{
 display: inline-flex;
-margin-left:auto
+margin-right:auto
 }
 .modalChatIcon img{
     width: 23px;
@@ -8218,7 +8220,7 @@ margin-left:auto
 
 
     .navbar-brand {
-        margin-right: 0;
+        margin-left: 0;
         width: 70px;
     }
 
@@ -8227,8 +8229,8 @@ margin-left:auto
     }
 
     .joinBtn {
-        float: left;
-        margin-left: 7px
+        float: right;
+        margin-right: 7px
     }
 
     .navbar-expand-lg .navbar-nav .nav-item .nav-link {
@@ -8257,7 +8259,7 @@ margin-left:auto
     }
 
     .up {
-        right: 50px
+        left: 50px
     }
 
     .subscribeFormControl,
@@ -8269,7 +8271,7 @@ margin-left:auto
     }
 
     .socialIcons li {
-        margin-right: 10px
+        margin-left: 10px
     }
 
     .footerPartners {
@@ -8277,13 +8279,13 @@ margin-left:auto
     }
 
     .footerList li a {
-        margin-left: 2px
+        margin-right: 2px
     }
 
-    .right-side {
+    .left-side {
         padding: 0;
         margin: 0;
-        border-left: 0;
+        border-right: 0;
         margin-top: 20px;
     }
 
@@ -8308,7 +8310,7 @@ margin-left:auto
     }
 
     .subscribeForm {
-        margin-left: 0
+        margin-right: 0
     }
 
     .subscribeFormControl {
@@ -8324,13 +8326,13 @@ margin-left:auto
 
     .profileDropDown {
         top: 47px;
-        left: -9px;
+        right: -9px;
         width: 190px;
         padding-top: 0opacit;
     }
 
     .profileDropDown .arrow-up {
-        left: 27%;
+        right: 27%;
     }
 
     .nav-item .dropdown-menu.submenu {
@@ -8448,7 +8450,7 @@ margin-left:auto
 
     .coursepage-tabs .nav-item {
         display: inline-block;
-        float: left;
+        float: right;
     }
 
     .coursesTabsSection {
@@ -8472,7 +8474,7 @@ margin-left:auto
     .sideCurriclum {
         width: 100%;
         position: relative;
-        left: 0;
+        right: 0;
         top: 0;
     }
 
@@ -8482,11 +8484,11 @@ margin-left:auto
 
     .courseVideoAndDetails {
         width: 100%;
-        left: 0;
+        right: 0;
     }
 
     .scrollVideo {
-        left: 0;
+        right: 0;
         height: auto;
     }
 
@@ -8511,7 +8513,7 @@ margin-left:auto
     }
 
     #MycoursesTabs .nav-link {
-        margin-right: 7px;
+        margin-left: 7px;
         font-size: .65em;
     }
 
@@ -8532,7 +8534,7 @@ margin-left:auto
     }
 
     .SuggestCourseForm .marginFormGroup {
-        margin-right: 0;
+        margin-left: 0;
     }
 
     .SuggestCourseForm .halfForm-group {
@@ -8635,7 +8637,7 @@ margin-left:auto
         padding:20px
     }
     .diplomaProgramBox .diplomaChart{
-        margin-left: 0;
+        margin-right: 0;
     }
     .LessondownloadFileCont p{
         max-width: 80%;
@@ -8667,7 +8669,7 @@ margin-left:auto
     }
 
     header .container-fluid {
-        padding-left: 10px;
+        padding-right: 10px;
         padding-right: 10px
     }
 
@@ -8686,8 +8688,8 @@ margin-left:auto
 
     .joinBtn {
         width: 80px;
-        margin-left: 15px;
-        margin-right: 3px
+        margin-right: 15px;
+        margin-left: 3px
     }
 
     .langBtn {
