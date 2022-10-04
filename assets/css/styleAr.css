@@ -8109,12 +8109,15 @@ display: flex
 }
 .inputAttach{
     position: absolute;
+    margin:0;
     margin-left: 20px;
     left:90px;
-    top:0
+    top:0;
+ 
 }
-.inputAttach img{
-    width: 21px;
+.inputAttach i{
+    color:#8F8D9A;
+    font-size: 25px;
 }
  #inputFileChat{
     position: absolute;

@@ -8136,18 +8136,25 @@ display: flex
 }
 .inputAttach{
     position: absolute;
+    margin:0;
     margin-right: 20px;
     right:90px;
-    top:0
+    top:0;
+  
 }
 .inputAttach img{
     width: 21px;
+}
+.inputAttach i{
+font-size: 25px;
+color:#8F8D9A
 }
  #inputFileChat{
     position: absolute;
     width: 0;
     height: 0;
     opacity: 0;
+
 }
 .smileSec{
     position: relative;
