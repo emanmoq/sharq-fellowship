@@ -237,7 +237,7 @@ jQuery(function ($) {
     $(this).not(this).find('span:first').removeClass('lni-chevron-up').addClass('lni-chevron-down');
     $(this).find('span:first').toggleClass('lni lni-chevron-up lni lni-chevron-down');
   })
-  $(".CurriculumList li").click(function () {
+  $(".CurriculumList .CurriculumLink").click(function () {
     $(this).not(this).find('span:first').removeClass('lni-chevron-down').addClass('lni-chevron-up');
     $(this).find('span:first').toggleClass('lni lni-chevron-down lni lni-chevron-up');
   })
@@ -250,8 +250,8 @@ jQuery(function ($) {
   });
   $(".faqHeader").on("click", "a", function (e) { e.preventDefault() });
 
-  $('.CurriculumList li').click(function () {
-    $(this).find('.innerCurriculumList').slideToggle(400);
+  $('.CurriculumList .CurriculumLink').click(function () {
+    $(this).parent('li').find('.innerCurriculumList').toggle(400);
   });
   $(".CurriculumList li").on("click", "a", function (e) { e.preventDefault() });
   $(".radioBtnContainer").on("click", "a", function (e) { e.preventDefault() });
@@ -329,6 +329,7 @@ jQuery(function ($) {
     }
 
   });
+
 
 });
 

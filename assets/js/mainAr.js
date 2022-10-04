@@ -253,12 +253,12 @@ jQuery(function ($) {
       $(this).find('span:first').toggleClass('lni lni-chevron-up lni lni-chevron-down');
     })
     $('.faqHeader').click(function () {
-      $(this).parent().find('.faqbody').slideToggle(400);
+      $(this).parent().find('.faqbody').slideDown(400);
     });
     $(".faqHeader").on("click", "a", function (e) { e.preventDefault() });
   
-    $('.CurriculumList li').click(function () {
-      $(this).find('.innerCurriculumList').slideToggle(400);
+    $('.CurriculumList .CurriculumLink').click(function () {
+      $(this).parent('li').find('.innerCurriculumList').toggle(400);
     });
     $(".CurriculumList li").on("click", "a", function (e) { e.preventDefault() });
     $(".radioBtnContainer").on("click", "a", function (e) { e.preventDefault() });

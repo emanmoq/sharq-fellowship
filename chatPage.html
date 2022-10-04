@@ -263,22 +263,22 @@
                             </div>
                             <div class="chatMembers">
                                 <ul>
-                                    <li class="NoImgMember">
+                                    <li class="NoImgMember active">
                                         <a href="#">
                                             <span>G</span>
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                         <a href="#">
                                             <img src="assets/images/chatImg.png" alt="">
                                         </a>
                                     </li>
-                                    <li>
+                                    <li >
                                         <a href="#">
                                             <img src="assets/images/chatImg2.png" alt="">
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class=" active">
                                         <a href="#">
                                             <img src="assets/images/chatImg3.png" alt="">
                                         </a>
@@ -288,7 +288,7 @@
                                             <img src="assets/images/chatImg4.png" alt="">
                                         </a>
                                     </li>
-                                    <li>
+                                    <li class=" active">
                                         <a href="#">
                                             <img src="assets/images/chatImg5.png" alt="">
                                         </a>
@@ -371,7 +371,7 @@
 
                                     <div class="inputAttach"><label for="inputFileChat">
                                             <input type="file" id="inputFileChat">
-                                            <i><img src="assets/images/Attachment.svg" alt=""></i>
+                                            <i class="fab fa-image"></i>
                                         </label></div>
 
                                     <button type="submit" class="btn sendChatBtn">
@@ -692,6 +692,10 @@
         })
 
     </script>
+    <script>$(".chatMembers li").click(function(){
+        $(".chatMembers li").removeClass("active")
+        $(this).addClass("active")
+      })</script>
 
 </body>
 
