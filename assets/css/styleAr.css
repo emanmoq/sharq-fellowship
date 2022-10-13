@@ -888,7 +888,6 @@ header .container-fluid {
 
 .diplomaIcon {
     display: flex;
-    align-self: center;
 }
 
 .circle-wrap {
@@ -1841,6 +1840,8 @@ footer .container {
     margin-left: 20px;
     float: right;
     position: relative;
+    display: flex;
+    overflow: hidden;
 }
 
 .profileSec span {
@@ -3014,7 +3015,7 @@ element.style {}
 
 .InstructorsSlider .instructorImg {
     position: relative;
-
+    display: flex;
 }
 
 .InstructorsSlider .instructorImg:before {
